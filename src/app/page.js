@@ -4,10 +4,9 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div>
+    <div className="h-screen">
       <Navbar />
       <Hero heading="Everyone's Favorite Family Band" />
-      
     </div>
   );
 };
