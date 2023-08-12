@@ -1,10 +1,10 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
 
-const page = () => {
+const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero heading="Everyone's Favorite Family Band" />
       <ul>
         <li>
           <Link href="/about">About</Link>
@@ -18,4 +18,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
