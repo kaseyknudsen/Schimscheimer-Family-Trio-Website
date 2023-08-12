@@ -1,12 +1,11 @@
+import Hero from "@/components/Hero";
 import Link from "next/link";
 
 const page = () => {
   return (
     <div>
+      <Hero />
       <ul>
-        <li>
-          <Link href="/"></Link>
-        </li>
         <li>
           <Link href="/about">About</Link>
           <Link href="/shows">Shows</Link>
