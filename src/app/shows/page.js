@@ -1,8 +1,11 @@
-import React from 'react'
+export const metadata = {
+  title: "Come see the Schimscheimer Family Trio",
+  description: "We'd love to play music for you!",
+};
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>Shows</div>
   )
 }
 

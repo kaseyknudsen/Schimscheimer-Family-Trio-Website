@@ -1,9 +1,10 @@
-import React from 'react'
+export const metadata = {
+  title: "Contact The Schimscheimer Family Trio",
+  description: "Get In Touch!",
+};
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <div>Contact</div>;
+};
 
-export default page
+export default page;
