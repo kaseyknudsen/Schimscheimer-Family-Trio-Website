@@ -2,7 +2,7 @@ const Hero = ({ heading }) => {
   return (
     <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
       {/* overlay */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/65" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
       <div className="p-5 text-white z-[2]  mt-[-10rem]">
         <h2 className="text-4xl">Schimscheimer Family Trio</h2>
         <h3 className='pt-2 '>{heading}</h3>
