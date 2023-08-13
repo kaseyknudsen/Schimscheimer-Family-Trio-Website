@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
@@ -13,11 +13,29 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor("#ffffff");
+        setTextColor("#000000");
+      } else {
+        setColor("transparent");
+        setTextColor("#ffffff");
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
+
   return (
-    <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 text-white">
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 text-white"
+    >
       <div className="max-w-[1240px] m-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-4xl p-2">SFT</h1>
+          <h1 style={{ color: `${textColor}` }} className="text-4xl p-2">
+            SFT
+          </h1>
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-2">
@@ -40,15 +58,19 @@ const Navbar = () => {
           </li>
         </ul>
         {/* mobile button */}
-        <div className="block sm:hidden z-10">
-          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        <div className="block sm:hidden z-10" onClick={handleNav}>
+          {nav ? (
+            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+          )}
         </div>
         {/* mobile menu */}
         <div
           className={
             nav
               ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
           }
         >
           <ul>

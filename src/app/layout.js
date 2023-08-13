@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body suppressHydrationWarning={true} className={raleway.className}>
         <Navbar />
         {children}
       </body>

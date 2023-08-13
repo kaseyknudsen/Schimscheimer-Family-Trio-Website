@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <div className="h-screen">
+    <div >
       {/* <Navbar /> */}
-      <Hero heading="Everyone's Favorite Family Band" />
+      <Hero />
     </div>
   );
 };
