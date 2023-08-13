@@ -35,22 +35,22 @@ const Navbar = () => {
         {/* mobile menu */}
         <div className="sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300">
           <ul>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="p-4 text-4xl hover:text-pink-400">
               <Link href="/about">About</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="p-4 text-4xl hover:text-purple-400">
               <Link href="/shows">Shows</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="p-4 text-4xl hover:text-yellow-400">
               <Link href="/listen">Listen</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="p-4 text-4xl hover:text-blue-400">
               <Link href="/store">Store</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="p-4 text-4xl hover:text-pink-400">
               <Link href="/#gallery">Gallery</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="p-4 text-4xl hover:text-purple-500">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
