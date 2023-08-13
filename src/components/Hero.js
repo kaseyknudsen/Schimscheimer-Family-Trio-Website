@@ -19,7 +19,7 @@ const Hero = ({ heading }) => {
           href="https://schimscheimerfamilytrio.bandcamp.com/album/genogram"
           target="_blank"
         >
-          <button className="px-8 py-2 border">Listen to Genogram</button>
+          <button className="px-8 py-2 border">Listen to the New Album</button>
         </Link>
       </div>
     </div>

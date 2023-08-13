@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Raleway } from "next/font/google";
+import Navbar from "@/components/Navbar";
 
 const raleway = Raleway({
   weight: ["400", "500", "600", "700"],
@@ -16,7 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
