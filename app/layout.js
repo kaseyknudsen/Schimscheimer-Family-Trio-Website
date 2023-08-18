@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Raleway } from "next/font/google";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 
 const raleway = Raleway({
   weight: ["400", "500", "600", "700"],
@@ -19,8 +18,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning={true} className={raleway.className}>
-        <Navbar />
-        {children}
+        <div className="custom-img bg-cover h-screen">
+          {/* overlay */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
+          <Navbar />
+
+          {children}
+        </div>
       </body>
     </html>
   );

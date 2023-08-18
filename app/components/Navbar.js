@@ -6,36 +6,16 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState("transparent");
-  const [textColor, setTextColor] = useState("white");
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("#ffffff");
-        setTextColor("#000000");
-      } else {
-        setColor("transparent");
-        setTextColor("#ffffff");
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
-
   return (
-    <div
-      style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 text-white"
-    >
+    <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 text-white">
       <div className="max-w-[1240px] m-auto flex justify-between items-center">
         <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="text-4xl p-2">
-            SFT
-          </h1>
+          <h1 className="text-4xl p-2">SFT</h1>
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-2">
@@ -59,11 +39,7 @@ const Navbar = () => {
         </ul>
         {/* mobile button */}
         <div className="block sm:hidden z-10" onClick={handleNav}>
-          {nav ? (
-            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
-          ) : (
-            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
-          )}
+          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         {/* mobile menu */}
         <div
