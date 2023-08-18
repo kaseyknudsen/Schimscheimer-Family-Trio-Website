@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Raleway } from "next/font/google";
-import Navbar from "@/components/Navbar";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const raleway = Raleway({
   weight: ["400", "500", "600", "700"],
