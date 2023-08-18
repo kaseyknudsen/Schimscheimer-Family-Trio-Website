@@ -1,9 +1,10 @@
 import Link from "next/link";
-
+import Slider from "./components/Slider";
+import { SliderData } from "./components/SliderData";
 const HomePage = () => {
   return (
     <div>
-      <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+      <div className="flex items-center justify-center h-screen mb-2 bg-fixed bg-center bg-cover custom-img">
         <div className="p-5 text-white z-[2]  mt-[-10rem]">
           <h2 className="text-4xl">Schimscheimer Family Trio</h2>
           <p className="py-5 pr-[4rem]">
@@ -23,6 +24,7 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
+      <Slider slides={SliderData} />
     </div>
   );
 };
