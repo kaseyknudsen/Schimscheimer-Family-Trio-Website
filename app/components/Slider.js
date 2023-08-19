@@ -20,7 +20,7 @@ const Slider = ({ slides }) => {
 }
 
   return (
-    <div id="gallery" >
+    <div>
       {SliderData.map((slide, index) => {
         return (
           <div

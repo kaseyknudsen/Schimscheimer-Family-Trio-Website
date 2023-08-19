@@ -12,10 +12,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 text-white">
+    <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 text-white text-xl">
       <div className="max-w-[1240px] m-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-4xl p-2">SFT</h1>
+          <h1 className="text-5xl p-2">SFT</h1>
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-2">
