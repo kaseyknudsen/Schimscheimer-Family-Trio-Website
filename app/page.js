@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <Hero />
-      <Slider slides={SliderData} />
+      {/* <Slider slides={SliderData} /> */}
     </div>
   );
 };

@@ -5,7 +5,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>Shows</div>
+    <div className="custom-img6 bg-fixed bg-cover h-screen">Shows</div>
   )
 }
 

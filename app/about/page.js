@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 const aboutPage = () => {
-  return <div>About</div>;
+  return <div className="custom-img2 bg-fixed bg-cover h-screen">About</div>;
 };
 
 export default aboutPage;

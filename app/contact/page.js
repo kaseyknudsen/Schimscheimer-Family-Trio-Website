@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 const page = () => {
-  return <div>Contact</div>;
+  return <div className="custom-img3 bg-fixed bg-cover h-screen">Contact</div>;
 };
 
 export default page;

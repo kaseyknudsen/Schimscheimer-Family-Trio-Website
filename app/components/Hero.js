@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center h-screen  bg-fixed bg-center bg-cover custom-img">
+    <div className="flex items-center justify-center custom-img h-screen bg-fixed bg-center bg-cover">
       <div className="p-5 text-white z-[2]  mt-[-10rem]">
         <h2 className="text-4xl">Schimscheimer Family Trio</h2>
         <p className="py-5 pr-[4rem]">

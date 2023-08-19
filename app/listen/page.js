@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 const page = () => {
-  return <div>Listen</div>;
+  return <div className="custom-img5 bg-fixed bg-cover h-screen">Listen</div>;
 };
 
 export default page;
