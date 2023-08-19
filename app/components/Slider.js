@@ -2,22 +2,57 @@
 import { SliderData } from "./SliderData";
 import Image from "next/image";
 import React, { useState } from "react";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const Slider = ({ slides }) => {
-  const [current, setCurrent] = useState();
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  const previousSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
   return (
-    <div id="gallery" className="flex items-center justify-center flex-col">
-      <h1 className="text-4xl mb-10">Gallery</h1>
+    <div id="gallery" className="">
       <div>
         {SliderData.map((slide, index) => {
           return (
-            <div key={index} className="">
-              <Image
-                src={slide.image}
-                width="600"
-                height="200"
-                objectFit="cover"
-              />
+            <div
+              key={index}
+              className={
+                index === current
+                  ? "opacity-[1] ease-in duration-1000"
+                  : "opacity-0"
+              }
+            >
+              <div className="relative flex justify-center p-4">
+                <FaArrowCircleLeft
+                  onClick={previousSlide}
+                  className="absolute top-[50%] left-[70px] text-white/70 cursor-pointer select-none z-[2]"
+                  size={50}
+                />
+
+                {index === current && (
+                  <Image
+                    src={slide.image}
+                    alt="Schimscheimer Family"
+                    width="700"
+                    height="200"
+                  />
+                )}
+                <FaArrowCircleRight
+                  onClick={nextSlide}
+                  className="absolute top-[50%] right-[70px] text-white/70 cursor-pointer select-none z-[2]"
+                  size={50}
+                />
+              </div>
             </div>
           );
         })}

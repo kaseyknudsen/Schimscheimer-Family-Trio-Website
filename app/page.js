@@ -23,6 +23,8 @@ const HomePage = () => {
             </button>
           </Link>
         </div>
+
+       
       </div>
       <Slider slides={SliderData} />
     </div>
