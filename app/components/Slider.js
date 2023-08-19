@@ -17,46 +17,44 @@ const Slider = ({ slides }) => {
 
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
-  }
+}
 
   return (
-    <div id="gallery" className="">
-      <div>
-        {SliderData.map((slide, index) => {
-          return (
-            <div
-              key={index}
-              className={
-                index === current
-                  ? "opacity-[1] ease-in duration-1000"
-                  : "opacity-0"
-              }
-            >
-              <div className="relative flex justify-center p-4">
-                <FaArrowCircleLeft
-                  onClick={previousSlide}
-                  className="absolute top-[50%] left-[70px] text-white/70 cursor-pointer select-none z-[2]"
-                  size={50}
-                />
+    <div id="gallery" >
+      {SliderData.map((slide, index) => {
+        return (
+          <div
+            key={index}
+            className={
+              index === current
+                ? "opacity-[1] ease-in duration-1000"
+                : "opacity-0"
+            }
+          >
+            <div className="relative flex justify-center p-4">
+              <FaArrowCircleLeft
+                onClick={previousSlide}
+                className="absolute top-[50%] left-[50px] text-white/70 cursor-pointer select-none z-[2]"
+                size={50}
+              />
 
-                {index === current && (
-                  <Image
-                    src={slide.image}
-                    alt="Schimscheimer Family"
-                    width="700"
-                    height="200"
-                  />
-                )}
-                <FaArrowCircleRight
-                  onClick={nextSlide}
-                  className="absolute top-[50%] right-[70px] text-white/70 cursor-pointer select-none z-[2]"
-                  size={50}
+              {index === current && (
+                <Image
+                  src={slide.image}
+                  alt="Schimscheimer Family"
+                  width="600"
+                  height="200"
                 />
-              </div>
+              )}
+              <FaArrowCircleRight
+                onClick={nextSlide}
+                className="absolute top-[50%] right-[50px] text-white/70 cursor-pointer select-none z-[2]"
+                size={50}
+              />
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
