@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning={true} className={raleway.className}>
-        {/* overlay */}
         <Navbar />
 
         {children}

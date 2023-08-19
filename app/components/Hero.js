@@ -3,7 +3,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="flex items-center justify-center custom-img h-screen bg-fixed bg-center bg-cover">
-      <div className="p-5 text-white font-medium  z-[10]  mt-[-10rem]">
+      <div className="p-5 text-white font-medium  z-[5]  mt-[-10rem]">
         <h2 className="text-6xl">Schimscheimer Family Trio</h2>
         <p className="py-5 pr-[4rem] ">
           Continuing with their tradition of composing sonnets to beloved,
