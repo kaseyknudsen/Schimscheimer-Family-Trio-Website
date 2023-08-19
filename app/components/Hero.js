@@ -19,7 +19,7 @@ const Hero = () => {
           <button className="px-8 py-2 border">Listen to the New Album</button>
         </Link>
       </div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-gray-950/70" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-neutral-500/90" />
     </div>
   );
 };
