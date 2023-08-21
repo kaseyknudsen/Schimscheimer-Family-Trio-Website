@@ -21,6 +21,7 @@ const Slider = ({ slides }) => {
 
   return (
     <div>
+      <div className="text-3xl text-white flex items-center justify-center">Gallery</div>
       {SliderData.map((slide, index) => {
         return (
           <div
@@ -30,7 +31,7 @@ const Slider = ({ slides }) => {
                 ? "opacity-[1] ease-in duration-1000"
                 : "opacity-0"
             }
-          >
+          > 
             <div className="relative flex justify-center p-4">
               <FaArrowCircleLeft
                 onClick={previousSlide}

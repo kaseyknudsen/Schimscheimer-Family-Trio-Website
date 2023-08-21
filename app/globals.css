@@ -7,8 +7,11 @@ html {
   font-family: "raleway", "sans-serif";
 }
 
-.custom-img {
+.custom-img0 {
   background-image: url("../public/Edited-Schim-Pics/aronsonarkin2.jpg");
+}
+.custom-img1 {
+  background-image: url("../public/sft_spectrograms/bass2.png");
 }
 .custom-img2 {
   background-image: url("../public/sft_spectrograms/mouth.png");
