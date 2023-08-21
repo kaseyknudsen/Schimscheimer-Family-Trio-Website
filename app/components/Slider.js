@@ -22,7 +22,7 @@ const Slider = ({ slides }) => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Change slide every 5000 milliseconds (5 seconds)
+    }, 4000); // Change slide every 5000 milliseconds (5 seconds)
 
     return () => clearInterval(interval);
   }, [current]); // Re-run effect when current slide changes
@@ -47,7 +47,7 @@ const Slider = ({ slides }) => {
               />
 
               {index === current && (
-                <div className="border-2 border-white rounded-md ease-in-out duration-1000">
+                <div className="border-2 border-white rounded-md">
                   <Image
                     src={slide.image}
                     alt="Schimscheimer Family"

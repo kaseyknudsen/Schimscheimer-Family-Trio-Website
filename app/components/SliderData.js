@@ -23,17 +23,7 @@ import trioAtElis from "../../public/Edited-Schim-Pics/trioAtElis.jpg";
 
 export const SliderData = [
   {
-    image: BabyKasey,
-  },
-  {
     image: BabyJon,
-  },
-
-  {
-    image: emasBaby,
-  },
-  {
-    image: gert,
   },
 
   {
