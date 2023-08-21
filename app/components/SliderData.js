@@ -19,6 +19,7 @@ import michael2 from "../../public/Edited-Schim-Pics/michael2.jpeg";
 import trioAndEli from "../../public/Edited-Schim-Pics/trio-and-eli.jpeg";
 import trio from "../../public/Edited-Schim-Pics/trio.jpeg";
 import michaelJonEli from "../../public/Edited-Schim-Pics/michael-jon-eli.jpeg";
+import trioAtElis from "../../public/Edited-Schim-Pics/trioAtElis.jpg";
 
 export const SliderData = [
   {
@@ -33,10 +34,6 @@ export const SliderData = [
   },
   {
     image: gert,
-  },
-
-  {
-    image: KaseyAndGrandma,
   },
 
   {
@@ -62,6 +59,9 @@ export const SliderData = [
   },
   {
     image: trioAndEli,
+  },
+  {
+    image: trioAtElis,
   },
   {
     image: ArkinFamily,

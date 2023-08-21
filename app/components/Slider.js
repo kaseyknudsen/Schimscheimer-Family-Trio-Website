@@ -18,10 +18,18 @@ const Slider = ({ slides }) => {
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
+  // Auto change slides every 5 seconds
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Change slide every 5000 milliseconds (5 seconds)
+
+    return () => clearInterval(interval);
+  }, [current]); // Re-run effect when current slide changes
 
   return (
     <div>
-      <div className="relative flex justify-center p-4">
+      <div className="relative flex justify-center p-4 ">
         {SliderData.map((slide, index) => {
           return (
             <div
@@ -34,7 +42,7 @@ const Slider = ({ slides }) => {
             >
               <FaArrowCircleLeft
                 onClick={previousSlide}
-                className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-[50%] left-[25px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
 
@@ -43,7 +51,7 @@ const Slider = ({ slides }) => {
                   <Image
                     src={slide.image}
                     alt="Schimscheimer Family"
-                    width="500"
+                    width="600"
                     height="200"
                     style={{ objectFit: "contain" }}
                   />
@@ -52,7 +60,7 @@ const Slider = ({ slides }) => {
 
               <FaArrowCircleRight
                 onClick={nextSlide}
-                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-[50%] right-[25px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
             </div>
