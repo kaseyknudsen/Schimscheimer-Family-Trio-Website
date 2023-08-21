@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
+
 const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -21,7 +22,8 @@ const Slider = ({ slides }) => {
 
   return (
     <div>
-      <div className="text-3xl text-white flex items-center justify-center">Gallery</div>
+      
+      <div className="relative flex justify-center p-4">
       {SliderData.map((slide, index) => {
         return (
           <div
@@ -32,10 +34,10 @@ const Slider = ({ slides }) => {
                 : "opacity-0"
             }
           > 
-            <div className="relative flex justify-center p-4">
+            
               <FaArrowCircleLeft
                 onClick={previousSlide}
-                className="absolute top-[50%] left-[50px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
 
@@ -43,19 +45,20 @@ const Slider = ({ slides }) => {
                 <Image
                   src={slide.image}
                   alt="Schimscheimer Family"
-                  width="600"
+                  width="500"
                   height="200"
                 />
               )}
               <FaArrowCircleRight
                 onClick={nextSlide}
-                className="absolute top-[50%] right-[50px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
             </div>
-          </div>
+         
         );
       })}
+       </div>
     </div>
   );
 };

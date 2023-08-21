@@ -11,6 +11,10 @@ import KaseyAndGrandma from "../../public/Edited-Schim-Pics/KaseyAndGrandma.jpg"
 import KaseysMom2 from "../../public/Edited-Schim-Pics/KaseysMom2.jpg";
 import KaseysMom from "../../public/Edited-Schim-Pics/KaseysMom.jpg";
 import KaseysParents from "../../public/Edited-Schim-Pics/KaseysParents.jpg";
+import michael from "../../public/Edited-Schim-Pics/michael.jpg";
+import playingCards from "../../public/Edited-Schim-Pics/Playing-cards.jpg";
+import studio from "../../public/Edited-Schim-Pics/studio.jpg";
+import mic from "../../public/Edited-Schim-Pics/mic.jpg";
 
 export const SliderData = [
   {
@@ -37,19 +41,24 @@ export const SliderData = [
   {
     image: JonAndEmily,
   },
-  {
-    image: KaseyAndCousinLeah,
-  },
+
   {
     image: KaseyAndGrandma,
   },
-  {
-    image: KaseysMom,
-  },
-  {
-    image: KaseysMom2,
-  },
+
   {
     image: KaseysParents,
+  },
+  {
+    image: michael,
+  },
+  {
+    image: playingCards,
+  },
+  {
+    image: studio,
+  },
+  {
+    image: mic,
   },
 ];
