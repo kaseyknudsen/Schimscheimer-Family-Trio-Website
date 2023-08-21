@@ -15,40 +15,30 @@ import michael from "../../public/Edited-Schim-Pics/michael.jpg";
 import playingCards from "../../public/Edited-Schim-Pics/Playing-cards.jpg";
 import studio from "../../public/Edited-Schim-Pics/studio.jpg";
 import mic from "../../public/Edited-Schim-Pics/mic.jpg";
+import michael2 from "../../public/Edited-Schim-Pics/michael2.jpeg";
+import trioAndEli from "../../public/Edited-Schim-Pics/trio-and-eli.jpeg";
+import trio from "../../public/Edited-Schim-Pics/trio.jpeg";
+import michaelJonEli from "../../public/Edited-Schim-Pics/michael-jon-eli.jpeg";
 
 export const SliderData = [
-  {
-    image: ArkinFamily,
-  },
   {
     image: BabyKasey,
   },
   {
     image: BabyJon,
   },
-  {
-    image: EllenDan,
-  },
-  {
-    image: em_truffle,
-  },
+
   {
     image: emasBaby,
   },
   {
     image: gert,
   },
-  {
-    image: JonAndEmily,
-  },
 
   {
     image: KaseyAndGrandma,
   },
 
-  {
-    image: KaseysParents,
-  },
   {
     image: michael,
   },
@@ -59,6 +49,21 @@ export const SliderData = [
     image: studio,
   },
   {
+    image: michaelJonEli,
+  },
+  {
     image: mic,
+  },
+  {
+    image: michael2,
+  },
+  {
+    image: trio,
+  },
+  {
+    image: trioAndEli,
+  },
+  {
+    image: ArkinFamily,
   },
 ];
