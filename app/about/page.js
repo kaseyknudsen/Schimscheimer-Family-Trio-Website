@@ -16,7 +16,12 @@ const aboutPage = () => {
       <div className="z-10 text-white">
         <div className="mb-20 flex items-center justify-center flex-col px-10 pr-[4rem]">
           <div className="border rounded">
-            <Image src={trio} width={300} height={400} alt="Michael Coleman" />
+            <Image
+              src={trio}
+              width={300}
+              height={400}
+              alt="Schimscheimer Family Trio"
+            />
           </div>
           <h2 className="text-4xl pb-4 pt-5">The Schimscheimer Family Trio</h2>
           {/* schimscheimer bio */}
@@ -31,73 +36,75 @@ const aboutPage = () => {
             note.
           </p>
 
-          <div class="h-0.5 w-[75%] bg-white my-8" />
+          <div class="h-0.5 w-[85%] bg-white my-8" />
         </div>
-        {/* all bios */}
-
-        <div className="pt-10">
-          <Image
-            src={michaelImage}
-            width={300}
-            height={400}
-            alt="Michael Coleman"
-          />
-        </div>
-        <div className="text-white font-medium">
+        {/* bios container */}
+        <div className="px-[10%]">
           {/* michael */}
 
-          <h2 className="text-3xl pt-5">Michael Coleman</h2>
-          <p className="py-5 pr-[4rem] ">
-            Michael Coleman is a pianist/composer living in Brooklyn, NY. He can
-            be found leading his own groups (Michael Rocketship, Enjoyer, Beep!)
-            or playing, recording and touring in a wide variety of other
-            people's projects (Ben Goldberg, Chris Cohen, tUnE-yArDs, Sam
-            Evian). When not playing keyboard instruments, Michael works as a
-            recording engineer at Figure 8 Recording.
-          </p>
-          <div class="h-0.5 w-[75%] bg-white my-8" />
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20">
+            <div className="pt-5 flex items-start">
+              <div className="w-[100%]">
+                <Image src={michaelImage} alt="Michael Coleman" width={1700} />
+              </div>
+            </div>
+            <div className="font-medium">
+              <h2 className="text-3xl pt-5">Michael Coleman</h2>
+              <p className="py-5">
+                Michael Coleman is a pianist/composer living in Brooklyn, NY. He
+                can be found leading his own groups (Michael Rocketship,
+                Enjoyer, Beep!) or playing, recording and touring in a wide
+                variety of other people's projects (Ben Goldberg, Chris Cohen,
+                tUnE-yArDs, Sam Evian). When not playing keyboard instruments,
+                Michael works as a recording engineer at Figure 8 Recording.
+              </p>
+            </div>
+          </div>
+          {/* <div className="h-0.5 w-[85%] bg-white my-8 mx-auto" /> */}
 
           {/* kasey */}
-          <div className="pt-10">
-            <Image
-              src={kaseyImage}
-              width={200}
-              height={400}
-              alt="Kasey Knudsen"
-            />
 
-            <h2 className="text-3xl pt-5">Kasey Knudsen</h2>
-            <p className="py-5 pr-[4rem] ">
-              Kasey Knudsen, a graduate of Berklee College of Music, has been a
-              vital part of the bay area music community since 2002. In addition
-              to leading a number of her own ensembles, she has performed and
-              recorded with a wide range of artists, including Ben Goldberg,
-              Fred Frith, Tune Yards and Charlie Hunter. Active as an educator,
-              she is currently a faculty member of The California Jazz
-              Conservatory, and has taught for the Stanford Jazz Workshop, The
-              Lafayette Jazz Workshop, Sonoma State University, SFJazz, The
-              Monterey Jazz Festival Education Program, and many more.
-            </p>
-            <div class="h-0.5 w-[75%] bg-white my-8" />
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20">
+            <div className="font-medium">
+              <h2 className="text-3xl pt-5">Kasey Knudsen</h2>
+              <p className="py-5">
+                Kasey Knudsen, a graduate of Berklee College of Music, has been
+                a vital part of the bay area music community since 2002. In
+                addition to leading a number of her own ensembles, she has
+                performed and recorded with a wide range of artists, including
+                Ben Goldberg, Fred Frith, Tune Yards and Charlie Hunter. Active
+                as an educator, she is currently a faculty member of The
+                California Jazz Conservatory, and has taught for the Stanford
+                Jazz Workshop, The Lafayette Jazz Workshop, Sonoma State
+                University, SFJazz, The Monterey Jazz Festival Education
+                Program, and many more.
+              </p>
+            </div>
+            <div className="pt-5 flex items-start">
+              <div className="w-[100%]">
+                <Image src={kaseyImage} width={1500} alt="Kasey Knudsen" />
+              </div>
+            </div>
           </div>
-          {/* jon */}
-          <div className="pt-10">
-            <Image
-              src={jonImage}
-              width={300}
-              height={400}
-              alt="Kasey Knudsen"
-            />
-            <h2 className="text-3xl pt-5">Jon Arkin</h2>
-            <p className="py-5 pr-[4rem] ">
-              A graduate of the University of Miami, Jon Arkin is an in-demand
-              freelance drummer with many notable local, national and
-              international artists. His drumming style has been sought out as
-              much for his versatility as for his uniqueness. A believer in the
-              power of listening, grooving, dynamic balance, and attunement, his
-              collaborators attest to his ability to suit the music of the
-              moment.
-            </p>
+
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10">
+            <div className="pt-5">
+              <div className="w-[100%]">
+                <Image src={jonImage} alt="Jon Arkin" width={1500} />
+              </div>
+            </div>
+            <div className="font-medium">
+              <h2 className="text-3xl pt-5">Jon Arkin</h2>
+              <p className="py-5">
+                A graduate of the University of Miami, Jon Arkin is an in-demand
+                freelance drummer with many notable local, national and
+                international artists. His drumming style has been sought out as
+                much for his versatility as for his uniqueness. A believer in
+                the power of listening, grooving, dynamic balance, and
+                attunement, his collaborators attest to his ability to suit the
+                music of the moment.
+              </p>
+            </div>
           </div>
         </div>
       </div>
