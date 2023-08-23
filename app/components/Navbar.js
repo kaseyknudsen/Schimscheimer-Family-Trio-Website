@@ -19,6 +19,9 @@ const Navbar = () => {
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-2">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="p-2">
             <Link href="/about">About</Link>
           </li>
           <li className="p-2">

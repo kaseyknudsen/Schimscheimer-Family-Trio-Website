@@ -9,10 +9,27 @@ export const metadata = {
 
 const aboutPage = () => {
   return (
-    <div className="flex relative custom-img2 bg-fixed bg-cover h-full bg-center flex-col pt-[30%] pl-4">
+    <div className="flex relative custom-img2 bg-fixed bg-cover h-full bg-center flex-col pt-[25%] pl-4 text-">
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/60" />
-      <div className="z-10">
-        <div className="pl-5">
+
+      <div className="z-10 text-white">
+        <div className="mb-20 flex items-center justify-center flex-col px-10 pr-[4rem]">
+          <h2 className="text-4xl pb-4">The Schimscheimer Family Trio</h2>
+
+          <p>
+            As if from an actual collection of blood relatives, the music of the
+            Schimscheimer Family Trio opens a window into an alternate world—one
+            in which songs become people, sounds describe stories, and music
+            falls beyond categorization. The fake siblings (and their fake
+            uncle) harness a mixture of woodwind, synthesizer, and percussion
+            sounds in creating tuneful odes to their fake relatives,
+            semi-traumatic childhood recollections, and intimidating animals of
+            note.
+          </p>
+
+          {/* <div class="h-0.5 w-full bg-purple-400 lg:w-1/2 mt-3"></div> */}
+        </div>
+        <div className="pl-5 pt-10">
           <Image
             src={michaelImage}
             width={300}
