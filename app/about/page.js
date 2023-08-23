@@ -60,7 +60,7 @@ const aboutPage = () => {
               </p>
             </div>
           </div>
-          {/* <div className="h-0.5 w-[85%] bg-white my-8 mx-auto" /> */}
+          <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" />
 
           {/* kasey */}
 
@@ -86,7 +86,8 @@ const aboutPage = () => {
               </div>
             </div>
           </div>
-
+          <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" />
+          {/* jon */}
           <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10">
             <div className="pt-5">
               <div className="w-[100%]">
@@ -106,6 +107,7 @@ const aboutPage = () => {
               </p>
             </div>
           </div>
+          {/* <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" /> */}
         </div>
       </div>
     </div>
