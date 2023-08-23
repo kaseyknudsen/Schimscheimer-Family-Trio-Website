@@ -1,5 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import AudioComponent from "./AudioComponent";
 const Hero = () => {
   return (
     <div className="flex items-center justify-center custom-img1 h-screen bg-fixed bg-center bg-cover">
@@ -20,6 +22,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/70" />
+      <AudioComponent />
     </div>
   );
 };
