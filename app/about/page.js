@@ -41,7 +41,7 @@ const aboutPage = () => {
         {/* bios container */}
         <div className="px-[10%]">
           {/* michael */}
-
+              
           <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20">
             <div className="pt-5 flex items-start">
               <div className="w-[100%]">
