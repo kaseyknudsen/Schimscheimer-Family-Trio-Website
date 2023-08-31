@@ -1,4 +1,5 @@
 import YouTubeEmbed from "../components/YouTubeEmbed";
+import { videoData } from "../data/videoData";
 export const metadata = {
   title: "Listen To The Schimscheimer Family Trio",
   description: "Check us out on Bandcamp and YouTube",
@@ -6,20 +7,15 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="custom-img5 bg-fixed bg-center min-h-screen">
+    <div className="custom-img5 bg-fixed bg-center min-h-screen relative top-0 left-0 right-0 bottom-0 z-[-1]">
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
-      <div className="absolute z-10 mt-40 flex flex-col gap-10 text-white video-responsive ml-20">
-        <div>
-          <p className="text-3xl text-center mb-5">Ursula</p>
-          {<YouTubeEmbed videoId={"DUsGf6sjZWE"} />}
-        </div>
-        <div>
-          <p className="text-3xl text-center mb-5">Marcel</p>
-          {<YouTubeEmbed videoId={"W-01_HLA8GI"} />}
-        </div>
-        <div>
-          <p className="text-3xl text-center mb-5">Dottie</p>
-          {<YouTubeEmbed videoId={"zsf2ytoJkEw"} />}
+      
+      <div className="h-full flex flex-col gap-10 items-center justify-center z-10 relative text-white text-3xl">
+        <div className="mt-60">
+        <h1 className="text-white text-5xl mb-40 text-center">Listen to The Schimscheimers</h1>
+          {videoData.map((video, idx) => {
+            return <YouTubeEmbed videoId={video.id} title={video.title} />;
+          })}
         </div>
       </div>
     </div>
