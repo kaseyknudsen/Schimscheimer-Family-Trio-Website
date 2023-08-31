@@ -22,7 +22,7 @@ export const showData = [
   },
   {
     date: "Sunday, October 8th",
-    venue: "Bird and Beckett Bookstore",
+    venue: "Bird & Beckett Bookstore",
     location: "San Francisco, CA",
     time: "7:30pm",
     website: "Venue Website",

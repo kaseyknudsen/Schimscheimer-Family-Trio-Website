@@ -7,24 +7,26 @@ export const metadata = {
 
 const page = () => {
   return (
-    <>
-      <div className="custom-img6 bg-fixed bg-cover h-screen">Shows</div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/60">
-        <div className="container mt-[20%] ml-10 mr-[4em] flex flex-col gap-10">
-          {showData.map((show, idx) => {
-            return (
-              <ShowCard
-                date={show.date}
-                venue={show.venue}
-                location={show.location}
-                time={show.time}
-                website={show.website}
-              />
-            );
-          })}
-        </div>
+    <div className="custom-img6 bg-fixed bg-center min-h-screen absolute top-0 left-0 right-0 bottom-0">
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
+      <p className="text-white text-6xl mt-40 ml-10 z-10 relative">Shows</p>
+
+      <div class="h-0.5 w-[83%] bg-white my-8 ml-10" />
+      <div className="container mt-[5%] ml-10 mr-[4em] flex flex-col gap-10 z-10">
+        {showData.map((show, idx) => {
+          return (
+            <ShowCard
+              date={show.date}
+              venue={show.venue}
+              location={show.location}
+              time={show.time}
+              website={show.website}
+            />
+          );
+        })}
       </div>
-    </>
+      {/* </div> */}
+    </div>
   );
 };
 
