@@ -21,6 +21,7 @@ const page = () => {
               location={show.location}
               time={show.time}
               website={show.website}
+              link={show.link}
             />
           );
         })}
