@@ -1,5 +1,5 @@
 "use client";
-import { SliderData } from "./SliderData";
+import { SliderData } from "../data/SliderData";
 import Image from "next/image";
 import React, { useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
@@ -28,42 +28,48 @@ const Slider = ({ slides }) => {
   }, [current]); // Re-run effect when current slide changes
 
   return (
-    <div>
-      <div className="relative flex justify-center p-4 ">
+    <div className="relative">
+      <div className="mt-[25%]">
         {SliderData.map((slide, index) => {
           return (
-            <div
-              key={index}
-              className={
-                index === current
-                  ? "opacity-[1] ease-in duration-1000"
-                  : "opacity-0"
-              }
-            >
-              <FaArrowCircleLeft
-                onClick={previousSlide}
-                className="absolute top-[50%] left-[25px] text-white/70 cursor-pointer select-none z-[2]"
-                size={50}
-              />
+            <>
+              <div
+                key={index}
+                className={
+                  index === current
+                    ? "opacity-[1] ease-in duration-1000"
+                    : "opacity-0"
+                }
+              >
+                <FaArrowCircleLeft
+                  onClick={previousSlide}
+                  className="absolute top-[50%] left-[25px] text-white/70 cursor-pointer select-none z-[2]"
+                  size={50}
+                />
 
-              {index === current && (
-                <div className="border-2 border-white rounded-md">
-                  <Image
-                    src={slide.image}
-                    alt="Schimscheimer Family"
-                    width="600"
-                    height="200"
-                    style={{ objectFit: "contain" }}
-                  />
+                {index === current && (
+                  <div className="border-2 border-white rounded-md">
+                    <Image
+                      src={slide.image}
+                      alt={slide.caption}
+                      width="600"
+                      height="200"
+                      // style={{ objectFit: "contain" }}
+                      priority={true}
+                    />
+                  </div>
+                )}
+
+                <FaArrowCircleRight
+                  onClick={nextSlide}
+                  className="absolute top-[50%] right-[25px] text-white/70 cursor-pointer select-none z-[2]"
+                  size={50}
+                />
+                <div className="p-2">
+                  <p className="text-white relative ">{slide.caption}</p>
                 </div>
-              )}
-
-              <FaArrowCircleRight
-                onClick={nextSlide}
-                className="absolute top-[50%] right-[25px] text-white/70 cursor-pointer select-none z-[2]"
-                size={50}
-              />
-            </div>
+              </div>
+            </>
           );
         })}
       </div>
