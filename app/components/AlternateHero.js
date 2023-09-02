@@ -5,8 +5,8 @@ import genogram from "../../public/Edited-Schim-Pics/Genogram.jpg";
 const AlternateHero = () => {
   return (
     <>
-      <div className="relative h-screen custom-img6 bg-fixed bg-cover bg-center flex items-center justify-center">
-        <div className="container flex flex-col gap-5 justify-center items-center text-white text-center z-10 mb-10">
+      <div className="min-h-screen custom-img6 bg-fixed bg-cover bg-center flex items-center justify-center">
+        <div className="container flex flex-col gap-10 justify-center items-center text-white text-center z-10 mb-10 pt-[15%]">
           <h2 className="text-4xl sm:text-6xl">Schimscheimer Family Trio</h2>
 
           <p className="px-20">
@@ -34,6 +34,7 @@ const AlternateHero = () => {
               </button>
             </Link>
           </div>
+         
         </div>
 
         <div className="bg-black/60 absolute h-screen top-0 bottom-0 left-0 right-0" />
