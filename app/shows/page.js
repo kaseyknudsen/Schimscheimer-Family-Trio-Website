@@ -12,7 +12,7 @@ const page = () => {
 
       <div className="h-full flex flex-col relative ml-10 mr-[4em] z-10">
         <div className="flex flex-col gap-5">
-          <p className="text-white text-6xl mt-60 z-10 relative">Shows</p>
+          <p className="text-white text-6xl mt-60 z-10 relative text-center">Shows</p>
           <div class="h-0.5 w-[100%] bg-white my-8" />
           <div className="flex flex-col gap-5">
             {showData.map((show, idx) => {

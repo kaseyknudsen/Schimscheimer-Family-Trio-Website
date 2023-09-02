@@ -2,6 +2,7 @@
 import YouTubeEmbed from "../components/YouTubeEmbed";
 import { videoData } from "../data/videoData";
 import BandcampAlbums from "../components/BandcampAlbums";
+import { bandcampData } from "../data/bandCampData";
 import { useEffect, useState } from "react";
 
 // export const metadata = {
@@ -21,16 +22,29 @@ const page = () => {
   const embedWidth =
     windowWidth < 640 ? "300" : windowWidth < 768 ? "500" : "700";
   return (
-    <div className="custom-img5 bg-fixed bg-center min-h-screen relative z-[-1]">
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
-
+    <div className="custom-img5 bg-fixed bg-center min-h-screen z-[-1]">
       <div className="h-full flex flex-col justify-center items-center z-10 relative text-white text-3xl">
-        <p className="text-white text-6xl mt-60 z-10 relative">Listen</p>
+        <p className="text-white text-6xl mt-60 relative">Listen</p>
         <div class="h-0.5 w-[83%] bg-white my-8" />
-        <BandcampAlbums />
+        <div className="container flex flex-col sm:flex-row justify-center relative text-lg gap-10 sm:gap-20 md:gap-40">
+          {bandcampData.map((album, idx) => {
+            return (
+              <div className="flex flex-col items-center">
+                <BandcampAlbums
+                  key={idx}
+                  albumTitle={album.albumTitle}
+                  link={album.link}
+                  image={album.image}
+                  alt={album.albumTitle}
+                />
+              </div>
+            );
+          })}
+        </div>
         <div class="h-0.5 w-[83%] bg-white my-8" />
-        <div className="mt-5 flex flex-col gap-20">
-          {videoData.map((video, idx, width, height) => {
+
+        <div className="mt-5 flex flex-col gap-20 z-20">
+          {videoData.map((video, idx) => {
             return (
               <YouTubeEmbed
                 videoId={video.id}
@@ -43,6 +57,7 @@ const page = () => {
           })}
         </div>
       </div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50" />
     </div>
   );
 };

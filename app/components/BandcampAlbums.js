@@ -1,43 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import iceCream from "../../public/Edited-Schim-Pics/iceCream.jpg";
-import genogram from "../../public/Edited-Schim-Pics/Genogram.jpg";
-import brokenHome from "../../public/Edited-Schim-Pics/brokenHome.jpg";
 
-const BandcampAlbums = () => {
+const BandcampAlbums = ({ albumTitle, link, image }) => {
   return (
-    <div className="container flex flex-col sm:flex-row justify-center relative text-white text-xl gap-10 sm:gap-20 md:gap-40">
-      <div className="flex flex-col items-center">
-        <p className="mb-2">Genogram</p>
+    <>
+      <p className="mb-4">{albumTitle}</p>
+      <Link href={link}>
         <Image
-          src={genogram}
+          src={image}
           width={200}
           height={200}
-          alt="Genogram"
+          alt={albumTitle}
           priority={true}
         />
-      </div>
-      <div className="flex flex-col items-center">
-        <p className="mb-2">Broken Home</p>
-        <Image
-          src={brokenHome}
-          width={200}
-          height={200}
-          alt="Broken Home"
-          priority={true}
-        />
-      </div>
-      <div className="flex flex-col items-center">
-        <p className="mb-2">Family Fun Time</p>
-        <Image
-          src={iceCream}
-          width={200}
-          height={200}
-          alt="Family Fun Time"
-          priority={true}
-        />
-      </div>
-    </div>
+      </Link>
+    </>
   );
 };
 
