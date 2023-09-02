@@ -5,8 +5,8 @@ import genogram from "../../public/Edited-Schim-Pics/Genogram.jpg";
 const AlternateHero = () => {
   return (
     <>
-      <div className="min-h-screen custom-img6 bg-fixed bg-cover bg-center flex items-center justify-center">
-        <div className="container flex flex-col gap-10 justify-center items-center text-white text-center z-10 mb-10 pt-[15%]">
+      <div className="min-h-screen custom-img6 bg-fixed bg-cover bg-center flex items-center justify-center z-[-1]">
+        <div className="container flex flex-col gap-10 justify-center items-center text-white z-10 text-center mb-10 pt-[15%]">
           <h2 className="text-4xl sm:text-6xl">Schimscheimer Family Trio</h2>
 
           <p className="px-20">
@@ -16,7 +16,7 @@ const AlternateHero = () => {
             reunion–-a multidimensional soundscape of sometimes delicate, other
             times maniacal moments.
           </p>
-          <div className="homePageImage z-2 relative hidden sm:block">
+          <div className="homePageImage z-2 hidden sm:block">
             <Image
               src={genogram}
               width={700}
@@ -36,7 +36,7 @@ const AlternateHero = () => {
           </div>
         </div>
 
-        <div className="bg-black/60 absolute h-screen top-0 bottom-0 left-0 right-0" />
+        <div className="bg-black/60 absolute top-0 bottom-0 left-0 right-0" />
       </div>
     </>
   );
