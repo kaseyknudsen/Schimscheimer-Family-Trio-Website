@@ -1,15 +1,32 @@
 "use client";
 
 import { useState } from "react";
-
+import validateContactForm from "../utils/validateContactForm";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [comments, setComments] = useState("");
   const [mailingListYes, setMailingListYes] = useState("");
+  const [formErrors, setFormErrors] = useState({});
 
-  const handleSubmit = (e) => {
+  const createUser = (e) => {
     e.preventDefault();
+    const resetValues = () => {
+      setName("");
+      setEmail("");
+      setComments("");
+      setMailingListYes("");
+    };
+    const errors = validateContactForm({
+      name,
+      email,
+      comments,
+      mailingListYes,
+    });
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
     let id = 0;
     fetch("https://sheetdb.io/api/v1/8exs0dgt0peut", {
       method: "POST",
@@ -31,11 +48,12 @@ const Contact = () => {
     })
       .then((response) => response.json())
       .then((data) => console.log(data));
+    resetValues();
   };
 
   return (
     <div className="pt-5 max-w-[1240px] text-white">
-      <form className="max-w-[600px] m-auto" onSubmit={handleSubmit}>
+      <form className="max-w-[600px] m-auto" onSubmit={createUser}>
         <div className="grid sm:grid-cols-2 gap-3">
           <input
             type="text"
@@ -44,7 +62,9 @@ const Contact = () => {
             onChange={(e) => setName(e.target.value)}
             value={name}
           />
-
+          {formErrors.name && (
+            <div className="text-red-500">{formErrors.name}</div>
+          )}
           <input
             type="text"
             className="p-3 text-black"
@@ -52,6 +72,9 @@ const Contact = () => {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
+          {formErrors.email && (
+            <div className="text-red-500">{formErrors.email}</div>
+          )}
         </div>
         <div>
           <textarea
