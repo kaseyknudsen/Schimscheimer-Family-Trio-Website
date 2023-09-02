@@ -34,7 +34,6 @@ const AlternateHero = () => {
               </button>
             </Link>
           </div>
-         
         </div>
 
         <div className="bg-black/60 absolute h-screen top-0 bottom-0 left-0 right-0" />

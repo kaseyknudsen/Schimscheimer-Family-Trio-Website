@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 
 export const metadata = {
   title: "Contact The Schimscheimer Family Trio",
@@ -6,7 +6,14 @@ export const metadata = {
 };
 
 const page = () => {
-  return <div className="custom-img3 bg-fixed bg-cover h-screen">Contact</div>;
+  return (
+    <div className="custom-img3 bg-fixed bg-cover min-h-screen">
+      <div className="pt-[20%] flex justify-center">
+        <h1 className=" text-white text-5xl">Get In Touch</h1>
+      </div>
+      <Contact />
+    </div>
+  );
 };
 
 export default page;

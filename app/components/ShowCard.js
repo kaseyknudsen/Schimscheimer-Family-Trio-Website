@@ -1,6 +1,6 @@
 const ShowCard = ({ date, venue, location, time, website, link }) => {
   return (
-    <div className="h-48 bg-white/80 rounded flex flex-row justify-between text-black font-semibold z-20">
+    <div className="h-38 bg-white rounded flex flex-row justify-between text-black font-semibold z-20">
       <div className="p-4 flex flex-col gap-2 items-start">
         <p className="text-md">{date}</p>
         <p className="text-xl">{venue}</p>
