@@ -6,7 +6,7 @@ const AlternateHero = () => {
   return (
     <>
       <div className="relative h-screen custom-img6 bg-fixed bg-cover bg-center flex items-center justify-center">
-        <div className="container flex flex-col gap-5 justify-center items-center text-white text-center z-10 mt-40 mb-10">
+        <div className="container flex flex-col gap-5 justify-center items-center text-white text-center z-10 mb-10">
           <h2 className="text-4xl sm:text-6xl">Schimscheimer Family Trio</h2>
 
           <p className="px-20">

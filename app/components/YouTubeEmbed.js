@@ -1,4 +1,6 @@
-const YouTubeEmbed = ({ videoId, title, width = 760, height = 415 }) => (
+'use client'
+
+const YouTubeEmbed = ({ videoId, title, width, height }) => (
   <div className="video-responsive text-3xl mb-5">
     <p className="text-3xl mb-5">{title}</p>
     <iframe
