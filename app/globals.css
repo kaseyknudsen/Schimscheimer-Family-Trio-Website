@@ -47,3 +47,8 @@ html {
   border: 1px solid pink;
   
 }
+
+.gallery {
+  width: 600px;
+  height: 400px;
+}

@@ -15,7 +15,7 @@ const Contact = () => {
       setName("");
       setEmail("");
       setComments("");
-      setMailingListYes("");
+      setMailingListYes(false);
     };
     const errors = validateContactForm({
       name,
@@ -95,7 +95,7 @@ const Contact = () => {
           id="mailing-list-yes"
           name="mailing-list"
           onChange={(e) => setMailingListYes(e.target.checked)}
-          value={mailingListYes}
+          checked={mailingListYes}
           className="mr-5"
         />
 

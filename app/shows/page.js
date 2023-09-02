@@ -7,7 +7,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="custom-img6 bg-fixed bg-center min-h-screen  z-[-1]">
+    <div className="custom-img6 bg-fixed bg-center min-h-screen z-[-1]">
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
 
       <div className="h-full flex flex-col ml-10 mr-[4em] z-10">
