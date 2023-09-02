@@ -32,3 +32,18 @@ html {
 .custom-img6 {
   background-image: url("../public/sft_spectrograms/saxlong.png");
 }
+.custom-img7 {
+  background-image: url("../public/Edited-Schim-Pics/studio.jpg");
+}
+.custom-img8 {
+  background-image: url("../public/Edited-Schim-Pics/trioAtElis.jpg");
+}
+.custom-img9 {
+  background-image: url("../public/Edited-Schim-Pics/mic.jpg");
+}
+
+.homePageImage {
+  opacity: .9;
+  border: 1px solid pink;
+  
+}

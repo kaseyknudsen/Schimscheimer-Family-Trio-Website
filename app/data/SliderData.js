@@ -21,6 +21,7 @@ import trio from "../../public/Edited-Schim-Pics/trio.jpeg";
 import michaelJonEli from "../../public/Edited-Schim-Pics/michael-jon-eli.jpeg";
 import trioAtElis from "../../public/Edited-Schim-Pics/trioAtElis.jpg";
 
+
 export const SliderData = [
   {
     image: BabyJon,
