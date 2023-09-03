@@ -52,8 +52,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-5 max-w-[1240px] text-white">
-      <form className="max-w-[600px] m-auto" onSubmit={createUser}>
+    <div className="sm:min-w-[300px] md:min-w-[768px] lg:max-w-[1240px] text-white form-container">
+      <div className="flex justify-center">
+        <h1 className=" text-white text-5xl mb-10">Get In Touch</h1>
+      </div>
+      <form className="max-w-[800px] m-auto" onSubmit={createUser}>
         <div className="grid sm:grid-cols-2 gap-3">
           <input
             type="text"
