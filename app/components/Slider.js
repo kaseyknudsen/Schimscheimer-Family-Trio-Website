@@ -37,13 +37,13 @@ const Slider = ({ images }) => {
             className="button-previous absolute left-0 p-2 hover:cursor-pointer "
             onClick={() => setSlider(-1)}
           >
-            <FaArrowCircleLeft className="w-7 h-7 md:w-10 md:h-10 lg:w-20 lg:h-20 " />
+            <FaArrowCircleLeft className="w-7 h-7 md:w-10 md:h-10 lg:w-20 lg:h-20 z-40" />
           </a>
           <a
             className="button-next absolute right-0 p-2 z-10 hover:cursor-pointer"
             onClick={() => setSlider(1)}
           >
-            <FaArrowCircleRight className="w-7 h-7 md:w-10 md:h-10 lg:w-20 lg:h-20" />
+            <FaArrowCircleRight className="w-7 h-7 md:w-10 md:h-10 lg:w-20 lg:h-20 z-40" />
           </a>
         </div>
       )}

@@ -24,9 +24,9 @@ const aboutPage = () => {
               className="lg:w-full"
             />
           </div>
-          <h2 className="text-4xl pb-4 pt-5">The Schimscheimer Family Trio</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl pb-4 pt-5">The Schimscheimer Family Trio</h2>
           {/* schimscheimer bio */}
-          <p className="lg:px-40 text-center">
+          <p className="lg:px-40 text-center md:text-xl lg:text-2xl ">
             As if from an actual collection of blood relatives, the music of the
             Schimscheimer Family Trio opens a window into an alternate world—one
             in which songs become people, sounds describe stories, and music
@@ -50,8 +50,8 @@ const aboutPage = () => {
               </div>
             </div>
             <div className="font-medium">
-              <h2 className="text-3xl pt-5">Michael Coleman</h2>
-              <p className="py-5">
+              <h2 className="text-3xl lg:text-4xl pt-5">Michael Coleman</h2>
+              <p className="py-5 lg:text-xl">
                 Michael Coleman is a pianist/composer living in Brooklyn, NY. He
                 can be found leading his own groups (Michael Rocketship,
                 Enjoyer, Beep!) or playing, recording and touring in a wide
@@ -67,8 +67,8 @@ const aboutPage = () => {
 
           <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20">
             <div className="font-medium">
-              <h2 className="text-3xl pt-5">Kasey Knudsen</h2>
-              <p className="py-5">
+              <h2 className="text-3xl  lg:text-4xl pt-5">Kasey Knudsen</h2>
+              <p className="py-5 lg:text-xl">
                 Kasey Knudsen, a graduate of Berklee College of Music, has been
                 a vital part of the bay area music community since 2002. In
                 addition to leading a number of her own ensembles, she has
@@ -96,8 +96,8 @@ const aboutPage = () => {
               </div>
             </div>
             <div className="font-medium">
-              <h2 className="text-3xl pt-5">Jon Arkin</h2>
-              <p className="py-5">
+              <h2 className="text-3xl lg:text-4xl pt-5">Jon Arkin</h2>
+              <p className="py-5 lg:text-xl">
                 A graduate of the University of Miami, Jon Arkin is an in-demand
                 freelance drummer with many notable local, national and
                 international artists. His drumming style has been sought out as

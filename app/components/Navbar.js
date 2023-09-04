@@ -60,9 +60,7 @@ const Navbar = () => {
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/listen">Listen</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/store">Store</Link>
-            </li>
+
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/gallery">Gallery</Link>
             </li>
