@@ -1,7 +1,12 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import {
+  FaArrowCircleLeft,
+  FaArrowCircleRight,
+  PiArrowSquareLeft,
+  PiArrowSquareRight,
+} from "react-icons/fa";
 
 const Slider = ({ images }) => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -22,6 +27,13 @@ const Slider = ({ images }) => {
   };
   useEffect(() => {
     setActiveSlide(images[slideIndex]);
+  }, [slideIndex]);
+
+  useEffect(() => {
+    const setSlideAutomatically = setInterval(() => {
+      setSlider(1);
+    }, 5000);
+    return () => clearInterval(setSlideAutomatically);
   }, [slideIndex]);
   return (
     <div id="slider" className="text-white p-20 ">

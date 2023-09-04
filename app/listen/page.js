@@ -24,9 +24,9 @@ const page = () => {
   return (
     <div className="custom-img5 bg-fixed bg-center min-h-screen z-[-1]">
       <div className="h-full flex flex-col justify-center items-center z-10  text-white text-3xl">
-        <p className="text-white text-6xl mt-60 relative z-10">Listen</p>
-        <div class="h-0.5 w-[83%] bg-white my-8 z-10" />
-        <div className="container flex flex-col sm:flex-row justify-center relative text-lg gap-10 sm:gap-20 md:gap-40 z-10">
+        <p className="text-white text-6xl mt-60 relative z-10 fadeIn3s">Listen</p>
+        <div class="h-0.5 w-[83%] bg-white my-8 z-1 img" />
+        <div className="container flex flex-col sm:flex-row justify-center relative text-lg gap-10 sm:gap-20 md:gap-40 z-10 fadeIn4s">
           {bandcampData.map((album, idx) => {
             return (
               <div className="flex flex-col items-center">
@@ -43,7 +43,7 @@ const page = () => {
         </div>
         <div class="h-0.5 w-[83%] bg-white my-8 z-10" />
 
-        <div className="mt-5 flex flex-col gap-20 z-20">
+        <div className="mt-5 flex flex-col gap-20 z-20 fadeIn5s">
           {videoData.map((video, idx) => {
             return (
               <YouTubeEmbed

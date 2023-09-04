@@ -1,8 +1,8 @@
-import AlternateHero from "./components/AlternateHero";
+import Hero from "./components/Hero";
 const HomePage = () => {
   return (
     <div>
-      <AlternateHero />
+      <Hero />
     </div>
   );
 };

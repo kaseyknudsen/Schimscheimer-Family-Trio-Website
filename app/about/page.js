@@ -15,7 +15,7 @@ const aboutPage = () => {
 
       <div className="z-10 text-white">
         <div className="mb-20 flex items-center justify-center flex-col px-10 pr-[4rem]">
-          <div className="border rounded-lg overflow-hidden">
+          <div className="border rounded-lg overflow-hidden fadeIn3s">
             <Image
               src={trio}
               width={300}
@@ -24,9 +24,11 @@ const aboutPage = () => {
               className="lg:w-full"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl pb-4 pt-5">The Schimscheimer Family Trio</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl pb-4 pt-5 fadeIn4s">
+            The Schimscheimer Family Trio
+          </h2>
           {/* schimscheimer bio */}
-          <p className="lg:px-40 text-center md:text-xl lg:text-2xl ">
+          <p className="lg:px-40 text-center md:text-xl lg:text-2xl fadeIn5s">
             As if from an actual collection of blood relatives, the music of the
             Schimscheimer Family Trio opens a window into an alternate world—one
             in which songs become people, sounds describe stories, and music
@@ -42,8 +44,8 @@ const aboutPage = () => {
         {/* bios container */}
         <div className="px-[10%]">
           {/* michael */}
-              
-          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20">
+
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20 fadeIn6s">
             <div className="pt-5 flex items-start">
               <div className="w-[100%] border rounded-lg overflow-hidden">
                 <Image src={michaelImage} alt="Michael Coleman" width={1700} />
@@ -65,7 +67,7 @@ const aboutPage = () => {
 
           {/* kasey */}
 
-          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20">
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20 fadeIn7s">
             <div className="font-medium">
               <h2 className="text-3xl  lg:text-4xl pt-5">Kasey Knudsen</h2>
               <p className="py-5 lg:text-xl">
@@ -89,7 +91,7 @@ const aboutPage = () => {
           </div>
           <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" />
           {/* jon */}
-          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10">
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10 fadeIn8s">
             <div className="pt-5">
               <div className="w-[100%] border rounded-lg overflow-hidden">
                 <Image src={jonImage} alt="Jon Arkin" width={1500} />

@@ -15,26 +15,28 @@ const Navbar = () => {
     <div className="fixed left-0 top-0 w-full z-20 ease-in duration-300 text-white text-xl">
       <div className="pl-5 m-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-5xl p-2">SFT</h1>
+          <h1 className="text-5xl p-2 hover:scale-125 transition duration-700 ease-in-out">
+            SFT
+          </h1>
         </Link>
         <ul className="hidden sm:flex">
-          <li className="p-2">
+          <li className="p-2 hover:scale-125 transition duration-700 ease-in-out">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-2">
+          <li className="p-2 hover:scale-125 transition duration-700 ease-in-out">
             <Link href="/about">About</Link>
           </li>
-          <li className="p-2">
+          <li className="p-2 hover:scale-125 transition duration-700 ease-in-out">
             <Link href="/shows">Shows</Link>
           </li>
-          <li className="p-2">
+          <li className="p-2 hover:scale-125 transition duration-700 ease-in-out">
             <Link href="/listen">Listen</Link>
           </li>
 
-          <li className="p-2">
+          <li className="p-2 hover:scale-125 transition duration-700 ease-in-out">
             <Link href="/gallery">Gallery</Link>
           </li>
-          <li className="p-2">
+          <li className="p-2 hover:scale-125 transition duration-700 ease-in-out">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

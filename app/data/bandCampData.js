@@ -16,6 +16,6 @@ export const bandcampData = [
   {
     albumTitle: "Family Fun Time",
     link: "https://schimscheimerfamilytrio.bandcamp.com/album/family-fun-time",
-    image: genogram,
+    image: iceCream,
   },
 ];

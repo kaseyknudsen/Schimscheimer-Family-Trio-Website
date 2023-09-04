@@ -3,8 +3,9 @@ import Image from "next/image";
 
 const BandcampAlbums = ({ albumTitle, link, image }) => {
   return (
-    <>
-      <p className="mb-4">{albumTitle}</p>
+    <div className="text-center">
+      <p className="mb-3">{albumTitle}</p>
+      <div className="border rounded-lg overflow-hidden transition ">
       <Link href={link}>
         <Image
           src={image}
@@ -14,7 +15,8 @@ const BandcampAlbums = ({ albumTitle, link, image }) => {
           priority={true}
         />
       </Link>
-    </>
+      </div>
+    </div>
   );
 };
 

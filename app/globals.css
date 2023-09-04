@@ -43,12 +43,44 @@ html {
 }
 
 .homePageImage {
-  opacity: .9;
+  opacity: 0.9;
   border: 1px solid pink;
-  
 }
 
 .gallery {
   width: 600px;
   height: 400px;
 }
+
+.fadeIn3s {
+  animation: fadeIn 3s;
+}
+.fadeIn4s {
+  animation: fadeIn 4s;
+}
+.fadeIn5s {
+  animation: fadeIn 5s;
+}
+.fadeIn6s {
+  animation: fadeIn 6s;
+}
+.fadeIn7s {
+  animation: fadeIn 7s;
+}
+.fadeIn8s {
+  animation: fadeIn 8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*  animate__fadeIn */
