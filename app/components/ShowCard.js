@@ -9,7 +9,7 @@ const ShowCard = ({ date, venue, location, time, website, link }) => {
         <p className="text-xs md:text-lg">{location}</p>
         <p className="text-xs md:text-lg">{time}</p>
       </div>
-      <div className="hidden sm:flex flex-col justify-center ">
+      <div className="hidden sm:flex flex-col justify-center">
         <Link
           href={link}
           className="block hover:cursor-pointer"

@@ -98,7 +98,9 @@ const Contact = () => {
           <p className="mb-2 fadeIn6s">
             Would you like to be added to our mailing list?
           </p>
-          <label htmlFor="mailing-list-yes fadeIn6s" className="mr-2">Yes</label>
+          <label htmlFor="mailing-list-yes" className="mr-2 fadeIn6s">
+            Yes
+          </label>
 
           <input
             type="checkbox"
@@ -116,72 +118,6 @@ const Contact = () => {
           </div>
         </form>
       ) : null}
-      {/* <form className="max-w-[800px] m-auto" onSubmit={createUser}>
-        <div className="grid sm:grid-cols-2 gap-3 fadeIn4s">
-          <input
-            type="text"
-            className="p-3 text-black"
-            placeholder="Name"
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-          />
-          {formErrors.name && (
-            <div className="text-red-500">{formErrors.name}</div>
-          )}
-          <input
-            type="text"
-            className="p-3 text-black"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-          {formErrors.email && (
-            <div className="text-red-500">{formErrors.email}</div>
-          )}
-        </div>
-        <div>
-          <textarea
-            className="w-full my-4 text-black fadeIn5s"
-            cols="30"
-            rows="10"
-            placeholder="Enter Comments Here"
-            onChange={(e) => setComments(e.target.value)}
-            value={comments}
-          ></textarea>
-        </div>
-        <div className="text-white mt-5 mb-5 text-xl">
-          {formSubmitted ? "Form Submitted!" : ""}
-        </div>
-
-        <p className="mb-2 fadeIn6s">
-          {!formSubmitted
-            ? "Would you like to be added to our mailing list?"
-            : null}
-        </p>
-        <label htmlFor="mailing-list-yes fadeIn6s" className="mr-2">
-          {!formSubmitted ? "Yes" : null}
-        </label>
-        {!formSubmitted ? (
-          <input
-            type="checkbox"
-            id="mailing-list-yes"
-            name="mailing-list"
-            onChange={(e) => setMailingListYes(e.target.checked)}
-            checked={mailingListYes}
-            className="mr-5 fadeIn7s"
-          />
-        ) : null}
-
-        <div className="mt-5 bg-white w-1/4 h-10 flex border-r-2 justify-center fadeIn8s">
-          {!formSubmitted ? (
-            <button type="submit" className="text-black font-semibold">
-              Submit
-            </button>
-          ) : (
-            null
-          )}
-        </div>
-      </form> */}
     </div>
   );
 };
