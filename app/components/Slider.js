@@ -16,9 +16,7 @@ import {
   AiFillFastBackward,
   AiFillFastForward,
   AiOutlinePause,
-  AiOutlinePlaySquare
-
-
+  AiOutlinePlaySquare,
 } from "react-icons/ai";
 
 const Slider = ({ images }) => {

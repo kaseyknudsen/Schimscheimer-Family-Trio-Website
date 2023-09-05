@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { FaInstagramSquare, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);

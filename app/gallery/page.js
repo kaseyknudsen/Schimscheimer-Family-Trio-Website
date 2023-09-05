@@ -24,7 +24,7 @@ const page = () => {
     trioAtElis,
   ];
   return (
-    <div className="custom-img6 bg-center p-8 h-screen z-[-1] flex flex-col justify-center items-center">
+    <div className="custom-img6 bg-center md:p-8 h-screen z-[-1] flex flex-col justify-center items-center">
       <div className="">
         <Slider images={imagesArray} title={"Gallery"} className="" />
       </div>

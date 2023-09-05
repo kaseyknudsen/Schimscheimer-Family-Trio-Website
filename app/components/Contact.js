@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="sm:min-w-[300px] md:min-w-[768px] lg:max-w-[1240px] text-white form-container">
+    <div className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl text-white form-container">
       <div className="flex justify-center">
         <h1 className=" text-white text-5xl mb-10 fadeIn3s">
           {!formSubmitted ? "Get In Touch" : "Form Submitted!"}
@@ -94,24 +94,24 @@ const Contact = () => {
               value={comments}
             ></textarea>
           </div>
+          <div className="md:flex md:flex-row items-center">
+            <p className="fadeIn6s mb-2 sm:mb-0 md:mr-8 sm:whitespace-nowrap">
+              Would you like to be added to our mailing list?
+            </p>
+            <label htmlFor="mailing-list-yes" className="fadeIn6s mr-2 md:mr-1">
+              Yes
+            </label>
 
-          <p className="mb-2 fadeIn6s">
-            Would you like to be added to our mailing list?
-          </p>
-          <label htmlFor="mailing-list-yes" className="mr-2 fadeIn6s">
-            Yes
-          </label>
-
-          <input
-            type="checkbox"
-            id="mailing-list-yes"
-            name="mailing-list"
-            onChange={(e) => setMailingListYes(e.target.checked)}
-            checked={mailingListYes}
-            className="mr-5 fadeIn7s"
-          />
-
-          <div className="mt-5 bg-white w-1/4 h-10 flex border-r-2 justify-center fadeIn8s">
+            <input
+              type="checkbox"
+              id="mailing-list-yes"
+              name="mailing-list"
+              onChange={(e) => setMailingListYes(e.target.checked)}
+              checked={mailingListYes}
+              className="fadeIn7s"
+            />
+          </div>
+          <div className="mt-5 md:mt-10 bg-white w-1/4 h-10 flex border-r-2 justify-center fadeIn8s">
             <button type="submit" className="text-black font-semibold">
               Submit
             </button>

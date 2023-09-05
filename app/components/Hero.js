@@ -25,15 +25,20 @@ const Hero = () => {
               other times maniacal moments.
             </p>
           </div>
-          <div className="homePageImage z-2 hidden sm:block fadeIn5s">
-            <Image src={genogram} width={700} height={700} alt="Genogram" />
-          </div>
+          <Link
+            href="https://schimscheimerfamilytrio.bandcamp.com/album/genogram"
+            target="_blank"
+          >
+            <div className="homePageImage z-2 hidden sm:block fadeIn5s">
+              <Image src={genogram} width={700} height={700} alt="Genogram" />
+            </div>
+          </Link>
           <div className="mt-5">
             <Link
               href="https://schimscheimerfamilytrio.bandcamp.com/album/genogram"
               target="_blank"
             >
-              <button className="px-8 py-2 border fadeIn6s  hover:scale-110 transition duration-700 ease-in-out">
+              <button className="px-8 py-2 border fadeIn6s bg-black hover:scale-110 transition duration-700 ease-in-out z-40">
                 Listen to Genogram on Bandcamp
               </button>
             </Link>
