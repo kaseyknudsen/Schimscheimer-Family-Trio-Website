@@ -21,7 +21,7 @@ export const showData = [
     location: "Arcata, CA",
     time: "7pm",
     website: "Venue Website",
-    link: null,
+    link: "",
   },
   {
     date: "Sunday, October 8th",
