@@ -4,11 +4,27 @@ import React, { useState, useEffect } from "react";
 import {
   FaChevronLeft,
   FaChevronRight,
+  FaPause,
+  FaCirclePlay,
 } from "react-icons/fa";
+
+import {
+  AiFillPauseCircle,
+  AiFillRightCircle,
+  AiFillLeftCircle,
+  AiFillPlayCircle,
+  AiFillFastBackward,
+  AiFillFastForward,
+  AiOutlinePause,
+  AiOutlinePlaySquare
+
+
+} from "react-icons/ai";
 
 const Slider = ({ images }) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [activeSlide, setActiveSlide] = useState(images[slideIndex]);
+  const [isPaused, setIsPaused] = useState(false);
 
   const setSlider = (number) => {
     let newNumber = slideIndex + number;
@@ -28,11 +44,12 @@ const Slider = ({ images }) => {
   }, [slideIndex]);
 
   useEffect(() => {
+    if (isPaused) return;
     const setSlideAutomatically = setInterval(() => {
       setSlider(1);
     }, 5000);
     return () => clearInterval(setSlideAutomatically);
-  }, [slideIndex]);
+  }, [slideIndex, isPaused]);
   return (
     <div id="slider" className="text-white p-20 ">
       {images && (
@@ -40,21 +57,33 @@ const Slider = ({ images }) => {
           <h1 className="text-4xl md:text-6xl text-center mb-10 text-white">
             Gallery
           </h1>
-          <div className="slider-img max-w-screen-md rounded-lg overflow-hidden">
+          <div className="slider-img max-w-screen-md rounded-lg overflow-hidden border">
             <Image src={activeSlide} className="object-cover w-full h-full" />
           </div>
-          <a
-            className="button-previous absolute left-0 hover:cursor-pointer "
-            onClick={() => setSlider(-1)}
-          >
-            <FaChevronLeft className="w-7 h-7 md:w-10 md:h-10 -ml-10 lg:w-20 lg:h-20 z-40 bg-black/90 p-2 rounded-full" />
-          </a>
-          <a
-            className="button-next absolute right-0 z-10 hover:cursor-pointer"
-            onClick={() => setSlider(1)}
-          >
-            <FaChevronRight className="w-7 h-7 md:w-10 md:h-10 -mr-10 lg:w-20 lg:h-20 z-40  bg-black/90  p-2 rounded-full" />
-          </a>
+          <div className="flex flex-row gap-3 mt-5">
+            <a
+              className="button-previous  left-0 hover:cursor-pointer "
+              onClick={() => setSlider(-1)}
+            >
+              <AiFillFastBackward className="w-5 h-5 md:w-10 md:h-10 lg:w-15 lg:h-15 z-40 bg-black/90 p-1 rounded-full" />
+            </a>
+            <a
+              className="button-next right-0 z-10 hover:cursor-pointer"
+              onClick={() => setIsPaused(!isPaused)}
+            >
+              {isPaused ? (
+                <AiOutlinePlaySquare className="w-5 h-5 md:w-10 md:h-10 lg:w-15 lg:h-15 z-40  p-1" />
+              ) : (
+                <AiOutlinePause className="w-5 h-5 md:w-10 md:h-10  lg:w-15 lg:h-15 z-40  p-1" />
+              )}
+            </a>
+            <a
+              className="button-next right-0 z-10 hover:cursor-pointer"
+              onClick={() => setSlider(1)}
+            >
+              <AiFillFastForward className="w-5 h-5 md:w-10 md:h-10  lg:w-15 lg:h-15 z-40  bg-black/90 p-1 rounded-full" />
+            </a>
+          </div>
         </div>
       )}
     </div>

@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import genogram from "../../public/Edited-Schim-Pics/Genogram.jpg";
-import { FaInstagramSquare, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
+import { Playfair } from "next/font/google";
+
+const playfair = Playfair({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 const Hero = () => {
   return (
     <>
@@ -10,7 +16,7 @@ const Hero = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl fadeIn3s ">
             Schimscheimer Family Trio
           </h2>
-
+          <div className={playfair.className}>
           <p className="px-20 md:text-xl fadeIn4s">
             Continuing with their tradition of composing sonnets to beloved,
             albeit often fabricated relatives, the Schimscheimer Family Trio’s
@@ -18,6 +24,7 @@ const Hero = () => {
             reunion–-a multidimensional soundscape of sometimes delicate, other
             times maniacal moments.
           </p>
+          </div>
           <div className="homePageImage z-2 hidden sm:block fadeIn5s">
             <Image src={genogram} width={700} height={700} alt="Genogram" />
           </div>
