@@ -39,7 +39,7 @@ const aboutPage = () => {
               className="lg:w-full"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl pb-4 pt-5 fadeIn4s">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl pb-4 pt-5 fadeIn4s text-center">
             The Schimscheimer Family Trio
           </h2>
           {/* schimscheimer bio */}
