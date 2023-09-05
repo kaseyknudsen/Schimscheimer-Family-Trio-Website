@@ -27,7 +27,7 @@ const page = () => {
   return (
     <div className="custom-img4 bg-center p-8 h-screen z-[-1] flex flex-col justify-center items-center">
       
-      <div>
+      <div className="fadeIn4s">
         <Slider images={imagesArray} title={"Gallery"} className=""/>
       </div>
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
