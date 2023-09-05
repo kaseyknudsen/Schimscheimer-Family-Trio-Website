@@ -96,7 +96,7 @@ const Contact = () => {
           </div>
 
           <p className="mb-2 fadeIn6s">
-            "Would you like to be added to our mailing list?"
+            Would you like to be added to our mailing list?
           </p>
           <label htmlFor="mailing-list-yes fadeIn6s" className="mr-2">Yes</label>
 
