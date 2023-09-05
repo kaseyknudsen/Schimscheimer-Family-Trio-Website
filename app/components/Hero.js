@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <div className="min-h-screen custom-img6 bg-fixed bg-cover bg-center flex items-center justify-center z-[-1]">
         <div className="container flex flex-col gap-10 justify-center items-center text-white z-10 text-center mb-10 pt-[15%]">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl fadeIn3s">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl fadeIn3s pt-10">
             Schimscheimer Family Trio
           </h2>
           <div className={playfair.className}>
@@ -29,7 +29,7 @@ const Hero = () => {
             href="https://schimscheimerfamilytrio.bandcamp.com/album/genogram"
             target="_blank"
           >
-            <div className="homePageImage z-2 hidden sm:block fadeIn5s">
+            <div className="homePageImage z-2 ml-10 mr-10 sm:ml-0 sm:mr-0 sm:block fadeIn5s">
               <Image src={genogram} width={700} height={700} alt="Genogram" />
             </div>
           </Link>
@@ -38,7 +38,7 @@ const Hero = () => {
               href="https://schimscheimerfamilytrio.bandcamp.com/album/genogram"
               target="_blank"
             >
-              <button className="px-8 py-2 border fadeIn6s bg-black hover:scale-110 transition duration-700 ease-in-out z-40">
+              <button className="px-4 sm:px-8 py-2 border fadeIn6s bg-black hover:scale-110 transition duration-700 ease-in-out z-40">
                 Listen to Genogram on Bandcamp
               </button>
             </Link>
