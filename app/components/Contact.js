@@ -94,35 +94,25 @@ const Contact = () => {
               value={comments}
             ></textarea>
           </div>
-          <div className="text-white mt-5 mb-5 text-xl">
-            {formSubmitted ? "Form Submitted!" : ""}
-          </div>
 
           <p className="mb-2 fadeIn6s">
-            {!formSubmitted
-              ? "Would you like to be added to our mailing list?"
-              : null}
+            "Would you like to be added to our mailing list?"
           </p>
-          <label htmlFor="mailing-list-yes fadeIn6s" className="mr-2">
-            {!formSubmitted ? "Yes" : null}
-          </label>
-          {!formSubmitted ? (
-            <input
-              type="checkbox"
-              id="mailing-list-yes"
-              name="mailing-list"
-              onChange={(e) => setMailingListYes(e.target.checked)}
-              checked={mailingListYes}
-              className="mr-5 fadeIn7s"
-            />
-          ) : null}
+          <label htmlFor="mailing-list-yes fadeIn6s" className="mr-2">Yes</label>
+
+          <input
+            type="checkbox"
+            id="mailing-list-yes"
+            name="mailing-list"
+            onChange={(e) => setMailingListYes(e.target.checked)}
+            checked={mailingListYes}
+            className="mr-5 fadeIn7s"
+          />
 
           <div className="mt-5 bg-white w-1/4 h-10 flex border-r-2 justify-center fadeIn8s">
-            {!formSubmitted ? (
-              <button type="submit" className="text-black font-semibold">
-                Submit
-              </button>
-            ) : null}
+            <button type="submit" className="text-black font-semibold">
+              Submit
+            </button>
           </div>
         </form>
       ) : null}
