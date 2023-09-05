@@ -8,6 +8,7 @@ const Contact = () => {
   const [comments, setComments] = useState("");
   const [mailingListYes, setMailingListYes] = useState("");
   const [formErrors, setFormErrors] = useState({});
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const createUser = (e) => {
     e.preventDefault();
@@ -16,6 +17,7 @@ const Contact = () => {
       setEmail("");
       setComments("");
       setMailingListYes(false);
+      setFormSubmitted(!formSubmitted);
     };
     const errors = validateContactForm({
       name,
@@ -89,23 +91,37 @@ const Contact = () => {
             value={comments}
           ></textarea>
         </div>
-        <p className="mb-2 fadeIn6s">Would you like to be added to our mailing list?</p>
-        <label htmlFor="mailing-list-yes" className="mr-2">
-          Yes
+        <div className="text-white mt-5 mb-5 text-xl">
+          {formSubmitted ? "Form Submitted!" : ""}
+        </div>
+
+        <p className="mb-2 fadeIn6s">
+          {!formSubmitted
+            ? "Would you like to be added to our mailing list?"
+            : null}
+        </p>
+        <label htmlFor="mailing-list-yes fadeIn6s" className="mr-2">
+          {!formSubmitted ? "Yes" : null}
         </label>
-        <input
-          type="checkbox"
-          id="mailing-list-yes"
-          name="mailing-list"
-          onChange={(e) => setMailingListYes(e.target.checked)}
-          checked={mailingListYes}
-          className="mr-5 fadeIn7s"
-        />
+        {!formSubmitted ? (
+          <input
+            type="checkbox"
+            id="mailing-list-yes"
+            name="mailing-list"
+            onChange={(e) => setMailingListYes(e.target.checked)}
+            checked={mailingListYes}
+            className="mr-5 fadeIn7s"
+          />
+        ) : null}
 
         <div className="mt-5 bg-white w-1/4 h-10 flex border-r-2 justify-center fadeIn8s">
-          <button type="submit" className="text-black font-semibold">
-            Submit
-          </button>
+          {!formSubmitted ? (
+            <button type="submit" className="text-black font-semibold">
+              Submit
+            </button>
+          ) : (
+            null
+          )}
         </div>
       </form>
     </div>
