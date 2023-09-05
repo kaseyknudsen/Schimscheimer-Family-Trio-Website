@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl text-white form-container">
+    <div className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl text-white form-container pt-20">
       <div className="flex justify-center">
         <h1 className=" text-white text-5xl mb-10 fadeIn3s">
           {!formSubmitted ? "Get In Touch" : "Form Submitted!"}
