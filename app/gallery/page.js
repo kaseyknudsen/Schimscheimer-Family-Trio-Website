@@ -1,5 +1,4 @@
 import Slider from "../components/Slider";
-import babyJon from "../../public/Edited-Schim-Pics/BabyJon.jpg";
 import ArkinFamily from "../../public/Edited-Schim-Pics/aronsonarkin2.jpg";
 import michael from "../../public/Edited-Schim-Pics/michael.jpg";
 import playingCards from "../../public/Edited-Schim-Pics/Playing-cards.jpg";
@@ -25,10 +24,9 @@ const page = () => {
     trioAtElis,
   ];
   return (
-    <div className="custom-img4 bg-center p-8 h-screen z-[-1] flex flex-col justify-center items-center">
-      
-      <div className="fadeIn4s">
-        <Slider images={imagesArray} title={"Gallery"} className=""/>
+    <div className="custom-img6 bg-center p-8 h-screen z-[-1] flex flex-col justify-center items-center">
+      <div className="">
+        <Slider images={imagesArray} title={"Gallery"} className="" />
       </div>
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/50" />
     </div>

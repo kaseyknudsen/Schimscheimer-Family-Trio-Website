@@ -8,7 +8,7 @@ export const metadata = {
 const page = () => {
   return (
     <div className="custom-img6 bg-fixed bg-center min-h-screen z-[-1] relative">
-      <div className="h-full flex flex-col ml-10 mr-[4em] z-10">
+      <div className="h-full flex flex-col ml-10 mr-[4em] z-20">
         <div className="flex flex-col gap-5">
           <p className="text-white text-6xl mt-60 z-10 text-center fadeIn4s">
             Shows

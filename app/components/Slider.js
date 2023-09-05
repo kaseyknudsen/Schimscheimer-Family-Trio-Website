@@ -2,8 +2,6 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import {
-  FaArrowCircleLeft,
-  FaArrowCircleRight,
   FaChevronLeft,
   FaChevronRight,
 } from "react-icons/fa";
