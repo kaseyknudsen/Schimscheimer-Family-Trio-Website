@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import genogram from "../../public/Edited-Schim-Pics/Genogram.jpg";
+import { FaInstagramSquare, FaYoutube, FaInstagram } from "react-icons/fa";
 const Hero = () => {
   return (
     <>
@@ -29,6 +30,26 @@ const Hero = () => {
                 Listen to Genogram on Bandcamp
               </button>
             </Link>
+          </div>
+          <div className="flex flex-row gap-3">
+            <div>
+              <a
+                href="https://www.instagram.com/schimscheimer_family_trio/"
+                target="_blank"
+                rel=""
+              >
+                {<FaInstagram size={40} className="" />}
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.youtube.com/channel/UCq3teAz399wdjMti7BrMrfw"
+                target="_blank"
+                rel=""
+              >
+                {<FaYoutube size={40} className="" />}
+              </a>
+            </div>
           </div>
         </div>
 

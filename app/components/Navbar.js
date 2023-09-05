@@ -3,12 +3,17 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { FaInstagramSquare, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const closeMobileMenu = () => {
+    setNav(false);
   };
 
   return (
@@ -19,6 +24,7 @@ const Navbar = () => {
             SFT
           </h1>
         </Link>
+
         <ul className="hidden sm:flex">
           <li className="p-2 hover:scale-125 transition duration-700 ease-in-out">
             <Link href="/">Home</Link>
@@ -54,20 +60,30 @@ const Navbar = () => {
         >
           <ul>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/about">About</Link>
+              <Link href="/about" onClick={closeMobileMenu}>
+                About
+              </Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/shows">Shows</Link>
+              <Link href="/shows" onClick={closeMobileMenu}>
+                Shows
+              </Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/listen">Listen</Link>
+              <Link href="/listen" onClick={closeMobileMenu}>
+                Listen
+              </Link>
             </li>
 
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/gallery">Gallery</Link>
+              <Link href="/gallery" onClick={closeMobileMenu}>
+                Gallery
+              </Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact" onClick={closeMobileMenu}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
