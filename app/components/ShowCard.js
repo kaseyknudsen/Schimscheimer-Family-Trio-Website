@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ShowCard = ({ date, venue, location, time, website, link }) => {
   return (
-    <div className="h-20 show-card md:h-40 bg-white rounded flex flex-row sm:justify-between text-black font-semibold z-20 overflow-hidden">
+    <div className="h-20 show-card md:h-40 bg-white rounded flex flex-row sm:justify-between text-black font-semibold overflow-hidden">
       <div className="p-3 flex flex-col md:gap-2 items-start">
         <p className="text-xs md:text-md">{date}</p>
         <p className="text-xs md:text-xl">{venue}</p>
