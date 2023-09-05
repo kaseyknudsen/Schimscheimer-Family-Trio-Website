@@ -54,10 +54,10 @@ const Contact = () => {
   return (
     <div className="sm:min-w-[300px] md:min-w-[768px] lg:max-w-[1240px] text-white form-container">
       <div className="flex justify-center">
-        <h1 className=" text-white text-5xl mb-10">Get In Touch</h1>
+        <h1 className=" text-white text-5xl mb-10 fadeIn3s">Get In Touch</h1>
       </div>
       <form className="max-w-[800px] m-auto" onSubmit={createUser}>
-        <div className="grid sm:grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-2 gap-3 fadeIn4s">
           <input
             type="text"
             className="p-3 text-black"
@@ -81,7 +81,7 @@ const Contact = () => {
         </div>
         <div>
           <textarea
-            className="w-full my-4 text-black"
+            className="w-full my-4 text-black fadeIn5s"
             cols="30"
             rows="10"
             placeholder="Enter Comments Here"
@@ -89,7 +89,7 @@ const Contact = () => {
             value={comments}
           ></textarea>
         </div>
-        <p className="mb-2">Would you like to be added to our mailing list?</p>
+        <p className="mb-2 fadeIn6s">Would you like to be added to our mailing list?</p>
         <label htmlFor="mailing-list-yes" className="mr-2">
           Yes
         </label>
@@ -99,10 +99,10 @@ const Contact = () => {
           name="mailing-list"
           onChange={(e) => setMailingListYes(e.target.checked)}
           checked={mailingListYes}
-          className="mr-5"
+          className="mr-5 fadeIn7s"
         />
 
-        <div className="mt-5 bg-white w-1/4 h-10 flex border-r-2 justify-center">
+        <div className="mt-5 bg-white w-1/4 h-10 flex border-r-2 justify-center fadeIn8s">
           <button type="submit" className="text-black font-semibold">
             Submit
           </button>

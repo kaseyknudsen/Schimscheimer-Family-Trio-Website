@@ -10,7 +10,7 @@ export const metadata = {
 
 const aboutPage = () => {
   return (
-    <div className="flex relative custom-img2 bg-fixed bg-center flex-col pt-[25%] pl-4">
+    <div className="flex relative custom-img2 bg-fixed bg-center flex-col pt-[25%] md:pt-[15%] pl-4">
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/60" />
 
       <div className="z-10 text-white">

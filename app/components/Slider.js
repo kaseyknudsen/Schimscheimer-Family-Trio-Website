@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 import {
   FaArrowCircleLeft,
   FaArrowCircleRight,
-  PiArrowSquareLeft,
-  PiArrowSquareRight,
+  FaChevronLeft,
+  FaChevronRight,
 } from "react-icons/fa";
 
 const Slider = ({ images }) => {
@@ -39,23 +39,23 @@ const Slider = ({ images }) => {
     <div id="slider" className="text-white p-20 ">
       {images && (
         <div className="slider-container relative flex flex-col items-center justify-center z-10">
-          <h1 className="text-4xl md:text-6xl text-center mb-4 text-white">
+          <h1 className="text-4xl md:text-6xl text-center mb-10 text-white">
             Gallery
           </h1>
           <div className="slider-img max-w-screen-md rounded-lg overflow-hidden">
             <Image src={activeSlide} className="object-cover w-full h-full" />
           </div>
           <a
-            className="button-previous absolute left-0 p-2 hover:cursor-pointer "
+            className="button-previous absolute left-0 hover:cursor-pointer "
             onClick={() => setSlider(-1)}
           >
-            <FaArrowCircleLeft className="w-7 h-7 md:w-10 md:h-10 lg:w-20 lg:h-20 z-40" />
+            <FaChevronLeft className="w-7 h-7 md:w-10 md:h-10 -ml-10 lg:w-20 lg:h-20 z-40 bg-black/90 p-2 rounded-full" />
           </a>
           <a
-            className="button-next absolute right-0 p-2 z-10 hover:cursor-pointer"
+            className="button-next absolute right-0 z-10 hover:cursor-pointer"
             onClick={() => setSlider(1)}
           >
-            <FaArrowCircleRight className="w-7 h-7 md:w-10 md:h-10 lg:w-20 lg:h-20 z-40" />
+            <FaChevronRight className="w-7 h-7 md:w-10 md:h-10 -mr-10 lg:w-20 lg:h-20 z-40  bg-black/90  p-2 rounded-full" />
           </a>
         </div>
       )}
