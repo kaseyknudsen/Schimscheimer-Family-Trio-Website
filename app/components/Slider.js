@@ -49,7 +49,7 @@ const Slider = ({ images }) => {
     return () => clearInterval(setSlideAutomatically);
   }, [slideIndex, isPaused]);
   return (
-    <div id="slider" className="text-white p-20 ">
+    <div id="slider" className="text-white px-10 lg:px-20 ">
       {images && (
         <div className="slider-container relative flex flex-col items-center justify-center z-10">
           <h1 className="text-4xl md:text-6xl text-center mb-10 text-white">
@@ -63,23 +63,35 @@ const Slider = ({ images }) => {
               className="button-previous  left-0 hover:cursor-pointer "
               onClick={() => setSlider(-1)}
             >
-              <AiFillFastBackward className="w-5 h-5 md:w-10 md:h-10 lg:w-15 lg:h-15 z-40 bg-black/90 p-1 rounded-full" />
+              <AiFillFastBackward
+                size={30}
+                className=" md:w-10 md:h-10 lg:w-15 lg:h-15 z-40 bg-black/90 p-1 rounded-full"
+              />
             </a>
             <a
               className="button-next right-0 z-10 hover:cursor-pointer"
               onClick={() => setIsPaused(!isPaused)}
             >
               {isPaused ? (
-                <AiOutlinePlaySquare className="w-5 h-5 md:w-10 md:h-10 lg:w-15 lg:h-15 z-40  p-1" />
+                <AiOutlinePlaySquare
+                  size={30}
+                  className="md:w-10 md:h-10 lg:w-15 lg:h-15 z-40  p-1"
+                />
               ) : (
-                <AiOutlinePause className="w-5 h-5 md:w-10 md:h-10  lg:w-15 lg:h-15 z-40  p-1" />
+                <AiOutlinePause
+                  size={30}
+                  className="md:w-10 md:h-10  lg:w-15 lg:h-15 z-40  p-1"
+                />
               )}
             </a>
             <a
               className="button-next right-0 z-10 hover:cursor-pointer"
               onClick={() => setSlider(1)}
             >
-              <AiFillFastForward className="w-5 h-5 md:w-10 md:h-10  lg:w-15 lg:h-15 z-40  bg-black/90 p-1 rounded-full" />
+              <AiFillFastForward
+                size={30}
+                className="z-40 md:w-10 md:h-10  lg:w-15 lg:h-15 bg-black/90 p-1 rounded-full"
+              />
             </a>
           </div>
         </div>
