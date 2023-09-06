@@ -86,7 +86,7 @@ const aboutPage = () => {
           {/* kasey */}
 
           <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20 fadeIn7s">
-            <div className="font-medium">
+            <div className="order-1 md:order-none font-medium">
               <h2 className="text-3xl  lg:text-4xl pt-5">Kasey Knudsen</h2>
               <div className={playfair.className}>
                 <p className="py-5 lg:text-xl">
@@ -103,7 +103,7 @@ const aboutPage = () => {
                 </p>
               </div>
             </div>
-            <div className="pt-5 flex items-start">
+            <div className=" order:-1 md:order-none pt-5 flex items-start">
               <div className="w-[100%] border rounded-lg overflow-hidden">
                 <Image src={kaseyImage} width={1500} alt="Kasey Knudsen" />
               </div>
