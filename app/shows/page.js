@@ -11,11 +11,11 @@ const page = () => {
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[1] bg-black/50" />
       <div className="h-full flex flex-col ml-10 mr-[4em]">
         <div className="flex flex-col gap-5">
-          <p className="text-white text-6xl mt-60 z-10 text-center fadeIn4s ">
+          <p className="text-white text-6xl mt-40 lg:mt-60 z-10 text-center fadeIn4s ">
             Shows
           </p>
           <div class="h-0.5 w-[100%] bg-white my-8" />
-          <div className="flex flex-col gap-5 fadeIn5s z-10">
+          <div className="flex flex-col gap-5 fadeIn5s z-10 mb-5">
             {showData.map((show, idx) => {
               return (
                 <ShowCard
