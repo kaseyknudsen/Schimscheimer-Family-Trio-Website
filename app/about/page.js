@@ -29,7 +29,7 @@ const aboutPage = () => {
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/60" />
 
       <div className="z-10 text-white">
-        <div className="mb-20 flex items-center justify-center flex-col px-10 pr-[4rem]">
+        <div className="mb-10 flex items-center justify-center flex-col px-10 pr-[4rem]">
           <div className="border rounded-lg overflow-hidden fadeIn3s">
             <Image
               src={trio}
@@ -39,12 +39,12 @@ const aboutPage = () => {
               className="lg:w-full"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl pb-4 pt-5 fadeIn4s text-center">
+          <h2 className="text-4xl  md:text-5xl lg:text-6xl pb-4 pt-5 fadeIn4s text-center">
             The Schimscheimer Family Trio
           </h2>
           {/* schimscheimer bio */}
           <div className={playfair.className}>
-            <p className="lg:px-40 text-center md:text-xl lg:text-xl fadeIn5s">
+            <p className="lg:px-40 text-center md:text-xl lg:text-2xl fadeIn5s">
               As if from an actual collection of blood relatives, the music of
               the Schimscheimer Family Trio opens a window into an alternate
               world—one in which songs become people, sounds describe stories,
@@ -60,17 +60,18 @@ const aboutPage = () => {
         {/* bios container */}
         <div className="px-[10%]">
           {/* michael */}
-
-          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20 fadeIn6s">
+          <h1 className="text-center text-4xl lg:text-5xl mt-20 mb-20">Meet the Schimscheimers</h1>
+          {/* <div className="h-0.5 w-[80%] bg-white my-3 mx-auto mb-20" /> */}
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10 fadeIn6s">
             <div className="pt-5 flex items-start">
               <div className="w-[100%] border rounded-lg overflow-hidden">
                 <Image src={michaelImage} alt="Michael Coleman" width={1700} />
               </div>
             </div>
-            <div className="font-medium">
-              <h2 className="text-3xl lg:text-4xl pt-5">Michael Coleman</h2>
+            <div className="">
+              <h2 className="text-2xl lg:text-3xl pt-5">Michael Coleman</h2>
               <div className={playfair.className}>
-                <p className="py-5 lg:text-xl">
+                <p className="pt-5 lg:text-xl">
                   Michael Coleman is a pianist/composer living in Brooklyn, NY.
                   He can be found leading his own groups (Michael Rocketship,
                   Enjoyer, Beep!) or playing, recording and touring in a wide
@@ -81,13 +82,13 @@ const aboutPage = () => {
               </div>
             </div>
           </div>
-          <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" />
+          {/* <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" /> */}
 
           {/* kasey */}
 
-          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-20 fadeIn7s">
+          <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10 fadeIn7s">
             <div className="order-1 md:order-none font-medium">
-              <h2 className="text-3xl  lg:text-4xl pt-5">Kasey Knudsen</h2>
+              <h2 className="text-2xl lg:text-3xl pt-5">Kasey Knudsen</h2>
               <div className={playfair.className}>
                 <p className="py-5 lg:text-xl">
                   Kasey Knudsen, a graduate of Berklee College of Music, has
@@ -109,7 +110,7 @@ const aboutPage = () => {
               </div>
             </div>
           </div>
-          <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" />
+          {/* <div className="h-0.5 w-[75%] bg-white my-8 mx-auto" /> */}
           {/* jon */}
           <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10 fadeIn8s">
             <div className="pt-5">
@@ -118,7 +119,7 @@ const aboutPage = () => {
               </div>
             </div>
             <div className="font-medium">
-              <h2 className="text-3xl lg:text-4xl pt-5">Jon Arkin</h2>
+              <h2 className="text-2xl lg:text-3xl pt-5">Jon Arkin</h2>
               <div className={playfair.className}>
                 <p className="py-5 lg:text-xl">
                   A graduate of the University of Miami, Jon Arkin is an
