@@ -17,7 +17,7 @@ const Hero = () => {
             Schimscheimer Family Trio
           </h2>
           <div className={playfair.className}>
-            <p className="px-20 md:text-xl fadeIn4s">
+            <p className="px-10 lg:px-20 md:text-xl fadeIn4s">
               Continuing with their tradition of composing sonnets to beloved,
               albeit often fabricated relatives, the Schimscheimer Family Trio’s
               3rd album “Genogram” is a musical voyage into an unhinged family
