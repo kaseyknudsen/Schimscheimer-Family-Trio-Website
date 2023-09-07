@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full z-20 ease-in duration-300 text-white text-xl">
+    <div className="relative bg-black left-0 top-0 w-full z-20 ease-in duration-300 text-white text-xl">
       <div className="pl-5 m-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-5xl p-2 hover:scale-125 transition duration-700 ease-in-out">
