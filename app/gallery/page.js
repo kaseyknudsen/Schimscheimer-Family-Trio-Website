@@ -1,5 +1,5 @@
 import Slider from "../components/Slider";
-import ArkinFamily from "../../public/Edited-Schim-Pics/aronsonarkin2.jpg";
+// import ArkinFamily from "../../public/Edited-Schim-Pics/aronsonarkin2.jpg";
 import michael from "../../public/Edited-Schim-Pics/michael.jpg";
 import playingCards from "../../public/Edited-Schim-Pics/Playing-cards.jpg";
 import studio from "../../public/Edited-Schim-Pics/studio.jpg";
@@ -12,7 +12,7 @@ import trioAtElis from "../../public/Edited-Schim-Pics/trioAtElis.jpg";
 
 const page = () => {
   const imagesArray = [
-    ArkinFamily,
+    // ArkinFamily,
     michael,
     playingCards,
     studio,

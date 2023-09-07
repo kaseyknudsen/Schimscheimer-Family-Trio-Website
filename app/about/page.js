@@ -15,14 +15,6 @@ const playfair = Playfair({
   subsets: ["latin"],
 });
 
-// export default function Home() {
-//   return (
-//     <div className={inter.className}>
-//       <p>Hello World</p>
-//     </div>
-//   )
-// }
-
 const aboutPage = () => {
   return (
     <div className="flex relative custom-img2 bg-fixed bg-center flex-col pt-[25%] md:pt-[15%] pl-4">
@@ -60,7 +52,9 @@ const aboutPage = () => {
         {/* bios container */}
         <div className="px-[10%]">
           {/* michael */}
-          <h1 className="text-center text-4xl lg:text-5xl mt-20 mb-20">Meet the Schimscheimers</h1>
+          <h1 className="text-center text-4xl lg:text-5xl mt-20 mb-20">
+            Meet the Schimscheimers
+          </h1>
           {/* <div className="h-0.5 w-[80%] bg-white my-3 mx-auto mb-20" /> */}
           <div className="flex flex-col md:flex-row md:items-center gap-x-10 mb-10 fadeIn6s">
             <div className="pt-5 flex items-start">

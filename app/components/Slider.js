@@ -1,18 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import {
-  FaChevronLeft,
-  FaChevronRight,
-  FaPause,
-  FaCirclePlay,
-} from "react-icons/fa";
+
 
 import {
-  AiFillPauseCircle,
-  AiFillRightCircle,
-  AiFillLeftCircle,
-  AiFillPlayCircle,
+
   AiFillFastBackward,
   AiFillFastForward,
   AiOutlinePause,
@@ -45,7 +37,7 @@ const Slider = ({ images }) => {
     if (isPaused) return;
     const setSlideAutomatically = setInterval(() => {
       setSlider(1);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(setSlideAutomatically);
   }, [slideIndex, isPaused]);
   return (
