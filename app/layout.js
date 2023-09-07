@@ -1,5 +1,11 @@
 import "./globals.css";
-import { Raleway, Playfair_Display, Cousine, Montserrat, Cutive_Mono } from "next/font/google";
+import {
+  Raleway,
+  Playfair_Display,
+  Cousine,
+  Montserrat,
+  Cutive_Mono,
+} from "next/font/google";
 import Navbar from "./components/Navbar";
 
 const raleway = Raleway({
@@ -11,7 +17,7 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 const cutive = Cutive_Mono({
-  weight: ["400", ],
+  weight: ["400"],
   subsets: ["latin"],
 });
 const montserrat = Montserrat({
@@ -33,6 +39,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
       <body suppressHydrationWarning={true} className={cutive.className}>
         <Navbar />
 
