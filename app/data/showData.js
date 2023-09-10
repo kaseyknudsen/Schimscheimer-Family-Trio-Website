@@ -24,7 +24,7 @@ export const showData = [
     link: "https://music.humboldt.edu/upcoming",
   },
   {
-    date: "Friday, October 6th",
+    date: "Saturday, October 7th",
     venue: "House Concert (message us for details)",
     location: "Arcata, CA",
     time: "7pm",
