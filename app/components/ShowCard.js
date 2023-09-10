@@ -10,15 +10,17 @@ const ShowCard = ({ date, venue, location, time, website, link }) => {
         <p className="text-xs md:text-lg">{time}</p>
       </div>
       <div className="hidden sm:flex flex-col justify-center">
-        <Link
-          href={link}
-          className="block hover:cursor-pointer"
-          target="_blank"
-        >
-          <button className="bg-black text-white w-32 md:w-42 py-2 md:py-4 px-5 mr-5 z-40">
-            {website}
-          </button>
-        </Link>
+        {link ? (
+          <Link
+            href={link}
+            className="block hover:cursor-pointer"
+            target="_blank"
+          >
+            <button className="bg-black text-white w-32 md:w-42 py-2 md:py-4 px-5 mr-5 z-40">
+              {website}
+            </button>
+          </Link>
+        ) : null}
       </div>
     </div>
   );

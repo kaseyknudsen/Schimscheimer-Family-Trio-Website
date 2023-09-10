@@ -9,11 +9,11 @@ export const showData = [
   },
   {
     date: "Thursday, October 5th",
-    venue: "Double Bill with Mark Clifford's Dirty Snacks Ensemble. Message us for details.",
+    venue:
+      "Double Bill with Mark Clifford's Dirty Snacks Ensemble. Message us for details!",
     location: "Oakland, CA",
     time: "8pm",
     website: "Venue Website",
-    link: "",
   },
   {
     date: "Friday, October 6th",
@@ -25,11 +25,10 @@ export const showData = [
   },
   {
     date: "Saturday, October 7th",
-    venue: "House Concert (message us for details)",
+    venue: "House Concert. Message us for details!",
     location: "Arcata, CA",
     time: "7pm",
     website: "Venue Website",
-    link: "",
   },
   {
     date: "Sunday, October 8th",
