@@ -13,7 +13,7 @@ export const showData = [
     location: "Oakland, CA",
     time: "8pm",
     website: "Venue Website",
-    link: "http://www.markcliffordmusic.com/",
+    link: "",
   },
   {
     date: "Friday, October 6th",
