@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
             <div>
               <a
-                href="https://www.youtube.com/channel/UCq3teAz399wdjMti7BrMrfw"
+                href="https://www.youtube.com/@SchimscheimerFamilyTrio"
                 target="_blank"
                 rel=""
               >
