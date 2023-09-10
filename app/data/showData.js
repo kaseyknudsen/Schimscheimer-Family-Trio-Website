@@ -8,6 +8,14 @@ export const showData = [
     link: "https://music.sonoma.edu/events/season/jazz",
   },
   {
+    date: "Thursday, October 5th",
+    venue: "Double Bill with Mark Clifford's Dirty Snacks Ensemble. Message us for details.",
+    location: "Oakland, CA",
+    time: "8pm",
+    website: "Venue Website",
+    link: "http://www.markcliffordmusic.com/",
+  },
+  {
     date: "Friday, October 6th",
     venue: "Humboldt State University",
     location: "Humboldt, CA",
