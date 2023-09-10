@@ -41,6 +41,9 @@ html {
 .custom-img9 {
   background-image: url("../public/Edited-Schim-Pics/mic.jpg");
 }
+.custom-img10 {
+  background-image: url("../public/sft_spectrograms/drums.png");
+}
 
 .homePageImage {
   opacity: 0.9;

@@ -17,8 +17,8 @@ const playfair = Playfair({
 
 const aboutPage = () => {
   return (
-    <div className="flex relative custom-img2 bg-fixed bg-center flex-col pt-[25%] md:pt-[15%] pl-4">
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/60" />
+    <div className="flex relative custom-img10 bg-fixed bg-center flex-col pt-[25%] md:pt-[15%] pl-4">
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-black/70" />
 
       <div className="z-10 text-white">
         <div className="mb-10 flex items-center justify-center flex-col px-10 pr-[4rem]">
