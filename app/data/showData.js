@@ -14,6 +14,7 @@ export const showData = [
     location: "Oakland, CA",
     time: "8pm",
     website: "Venue Website",
+    link: "https://www.eventbrite.com/e/the-dirty-snacks-ensemble-schimscheimer-family-trio-double-cd-release-tickets-718342972167?aff=oddtdtcreator",
   },
   {
     date: "Friday, October 6th",
