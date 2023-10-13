@@ -14,22 +14,30 @@ const page = () => {
           <p className="text-white text-6xl mt-40 lg:mt-60 z-10 text-center fadeIn4s ">
             Shows
           </p>
-          <div class="h-0.5 w-[100%] bg-white my-8" />
-          <div className="flex flex-col gap-5 fadeIn5s z-10 mb-5">
-            {showData.map((show, idx) => {
-              return (
-                <ShowCard
-                  key={idx}
-                  date={show.date}
-                  venue={show.venue}
-                  location={show.location}
-                  time={show.time}
-                  website={show.website}
-                  link={show.link ? show.link : null}
-                />
-              );
-            })}
-          </div>
+          {showData && showData.length > 0 ? (
+            <>
+              <div class="h-0.5 w-[100%] bg-white my-8" />
+              <div className="flex flex-col gap-5 fadeIn5s z-10 mb-5">
+                {showData.map((show, idx) => {
+                  return (
+                    <ShowCard
+                      key={idx}
+                      date={show.date}
+                      venue={show.venue}
+                      location={show.location}
+                      time={show.time}
+                      website={show.website}
+                      link={show.link ? show.link : null}
+                    />
+                  );
+                })}
+              </div>
+            </>
+          ) : (
+            <p className="text-white text-3xl mt-40 lg:mt-60 z-10 text-center fadeIn4s ">
+              No shows currently scheduled. Check back soon!
+            </p>
+          )}
         </div>
       </div>
     </div>
