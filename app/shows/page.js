@@ -5,6 +5,12 @@ export const metadata = {
   description: "We'd love to play music for you!",
 };
 
+const convertDate = (dateString) => {
+  const [weekday, month, day] = dateString.split(", ")[1].split(" ");
+  const currentYear = new Date().getFullYear();
+  return new Date(`${month} ${day}, ${currentYear}`);
+};
+
 const page = () => {
   return (
     <div className="custom-img6 bg-fixed bg-center min-h-screen z-[-1]">
