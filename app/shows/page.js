@@ -1,15 +1,18 @@
 import ShowCard from "../components/ShowCard";
-import { showData } from "../data/showData";
+import { performanceDetails } from "../data/performanceDetails";
 export const metadata = {
   title: "Come see the Schimscheimer Family Trio",
   description: "We'd love to play music for you!",
 };
 
-const convertDate = (dateString) => {
-  const [weekday, month, day] = dateString.split(", ")[1].split(" ");
+function convertToDate(dateStr) {
+  const [, datePart] = dateStr.split(", "); // Extracting the second part directly
+  const [month, dayWithSuffix] = datePart.split(" ");
+  // Remove ordinal suffix from day
+  const day = dayWithSuffix.replace(/(st|nd|rd|th)$/, "");
   const currentYear = new Date().getFullYear();
   return new Date(`${month} ${day}, ${currentYear}`);
-};
+}
 
 const page = () => {
   return (
@@ -20,11 +23,11 @@ const page = () => {
           <p className="text-white text-6xl mt-40 lg:mt-60 z-10 text-center fadeIn4s ">
             Shows
           </p>
-          {showData && showData.length > 0 ? (
+          {performanceDetails && performanceDetails.length > 0 ? (
             <>
               <div class="h-0.5 w-[100%] bg-white my-8" />
               <div className="flex flex-col gap-5 fadeIn5s z-10 mb-5">
-                {showData.map((show, idx) => {
+                {performanceDetails.map((show, idx) => {
                   return (
                     <ShowCard
                       key={idx}

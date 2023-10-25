@@ -1,4 +1,4 @@
-export const showData = [
+export const performanceDetails = [
   {
     date: "Wednesday, October 4th",
     venue: "Sonoma State University",
