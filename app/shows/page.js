@@ -14,6 +14,11 @@ function convertToDate(dateStr) {
   return new Date(`${month} ${day}, ${currentYear}`);
 }
 
+const upcomingPerformances = performanceDetails.filter((performance) => {
+  const performanceDate = convertToDate(performance.date);
+  return performanceDate > new Date();
+});
+
 const page = () => {
   return (
     <div className="custom-img6 bg-fixed bg-center min-h-screen z-[-1]">
@@ -23,11 +28,11 @@ const page = () => {
           <p className="text-white text-6xl mt-40 lg:mt-60 z-10 text-center fadeIn4s ">
             Shows
           </p>
-          {performanceDetails && performanceDetails.length > 0 ? (
+          {upcomingPerformances && upcomingPerformances.length > 0 ? (
             <>
               <div class="h-0.5 w-[100%] bg-white my-8" />
               <div className="flex flex-col gap-5 fadeIn5s z-10 mb-5">
-                {performanceDetails.map((show, idx) => {
+                {upcomingPerformances.map((show, idx) => {
                   return (
                     <ShowCard
                       key={idx}
@@ -43,7 +48,7 @@ const page = () => {
               </div>
             </>
           ) : (
-            <p className="text-white text-3xl mt-40 lg:mt-60 z-10 text-center fadeIn4s ">
+            <p className="text-white text-3xl mt-20 lg:mt-50 z-10 text-center fadeIn4s ">
               No shows currently scheduled. Check back soon!
             </p>
           )}
